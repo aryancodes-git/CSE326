@@ -1,7 +1,7 @@
 body {
     background-color: lavenderblush;
     background-image:
-        linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 165, 0, 0.2)),
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 165, 0, 0.3)),
          url("https://upload.wikimedia.org/wikipedia/en/3/3a/Lovely_Professional_University_logo.png?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original");
     background-repeat: no-repeat;
     background-position: center;

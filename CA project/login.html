@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Feedback</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-left-image">
+           <!--image yaha add hogi login form k left side wali-->
+        </div>
+        <div class="login-form">
+            <!--this image is not the left wali, it's for the login form-->
+            <img src="images/lpulogo.png" alt="Logo" class="logo" width="100" height="100">
+        <h1 class="login-title">Lovely Professional University</h1>
+        <h2 class="login-subtitle">Student Login</h2>
+        </div>
+        <!--pay attention to the div classes below, styling k time use krna hai-->
+        <form class="login-field" action="index.html" method="get">
+            <div class="user-name">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            </div>
+            <div class="pass-word">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="login-button">
+            <button type="submit">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
