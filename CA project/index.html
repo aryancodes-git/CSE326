@@ -13,15 +13,17 @@
 
 
 
-    <!--lpu logo and project title. Nav links for the top bar are also here-->
+<!--lpu logo and project title. Nav links for the top bar are also here-->
+
 <body>
 
 
     <header class="header">
-        
+
         <!-- now in div -->
 
-        <div class="header-content" style="display: flex; justify-content: space-between; align-items: center; position: relative;">
+        <div class="header_content"
+            style="display: flex; justify-content: space-between; align-items: center; position: relative;">
 
             <div class="logo&title" style="display: flex; align-items: center; gap: 10px;">
                 <img src="images/lpulogo.png" alt="Logo" class="logo" width="50" height="50">
@@ -30,44 +32,236 @@
                     <small style="display: block;">& evaluation portal</small>
                 </div>
             </div>
-        
-        <!--  ***change**** "nav is in div & in table now" -->
+
+            <!--  ***change**** "nav is in div & in table now" -->
             <div class="nav" style="display: flex; gap: 25px; position: absolute; transform: translateX(-50%);">
-                
+
                 <div class="nav" style="display: inline-block; margin-left: 350px">
                     <nav class="nav" style="display: inline-block; margin-left: 350px">
-                        <table class="nav-table" >
-                            <td><a href="index.html">Dashboard</a></td>
-                            <td><a href="feedback.html">Feedback</a></td>
-                            <td><a href="admin.html">Admin</a></td>
+                        <table class="nav-table">
+                            <div class="nav_item_dashboard">
+                                <td>
+                                    <a href="index.html">Dashboard</a>
+                                </td>
+                            </div>
+                            <div class="nav_item_feedback">
+                                <td>
+                                    <a href="feedback.html">Feedback</a>
+                                </td>
+                            </div>
+                            <div class="nav_item_admin">
+                                <td>
+                                    <a href="admin.html">Admin</a>
+                                </td>
+                            </div>
                         </table>
                     </nav>
                 </div>
 
-            
-            
-        <!--below is notification and the dropdown menu for profile-->
-            
-                <div class="notification&profile" style="display: flex; gap: 15px;">
+
+
+                <!--below is notification and the dropdown menu for profile-->
+
+                <div class="notification_&_profile" style="display: flex; gap: 15px;">
                     <table>
-                        <td><img src ="images/noti.png" alt="Notification" width="30" height="30" ></td>
+                        <td><img src="images/noti.png" alt="Notification" width="30" height="30"></td>
                         <td>
-                            <span ><details style="display: inline-block;">
-                            <summary style="margin-left: 10px">
-                                <img src="images/profile.png" alt="Profile" width="30" height="30">
-                            </summary>
-                            <nav style="margin-left: 10px">
-                                <div><a href="#">Profile</a></div>
-                                <div><a href="login.html">Login</a></div>
-                                <div><a href="#">Settings</a></div>
-                                <div><a href="#">Logout</a></div>
-                            </nav>
-                        </details>
-                    </span>
-                    </td>
+                            <span>
+                                <details style="display: inline-block;">
+                                    <summary style="margin-left: 10px">
+                                        <img src="images/profile.png" alt="Profile" width="30" height="30">
+                                    </summary>
+                                    <nav style="margin-left: 10px">
+                                        <div class="profile_nav_profile">
+                                            <a href="#">Profile</a>
+                                        </div>
+                                        <div class="profile_nav_login">
+                                            <a href="login.html">Login</a>
+                                        </div>
+                                        <div class="profile_nav_settings">
+                                            <a href="#">Settings</a>
+                                        </div>
+                                        <div class="profile_nav_logout">
+                                            <a href="#">Logout</a>
+                                        </div>
+                                    </nav>
+                                </details>
+                            </span>
+                        </td>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<!-- Main Content -->
+ <!-- 
+    there are 2 main divs in the main content section, one for the image and one for the text.
+    The image div contains a figure with multiple images of teachers.
+    The text div contains a heading, paragraphs, and a list of key features.
+    i think of 2 way like 
+            (vertical approach)        1 --- we can use figure as marque or use some other css and then text shows up and down with some css animation.
+            (horizontal approach)      2 --- we can dive the div container into 2 divs 
+                                              a -- one div show some text
+                                              b -- other div show img with some css animation.
+
+        img are as temp example
+ -->
+    
+    
+
+    <main class="main">
+        <div class="main_container" >
+
+            <div class="main_image">
+                <marquee behavior="20" direction="center" scrollamount="5" style="width: 100%; height: 100%;">
+                    <figure>
+                        <img src="/CA project/images/main_teacher_img_1.png" alt="Main Image" width="300" height="80">
+                        <img src="/CA project/images/main_teacher_img_2.png" alt="Main Image" width="300" height="80">
+                        <img src="/CA project/images/main_teacher_img_3.png" alt="Main Image" width="300" height="80">
+                        <img src="/CA project/images/main_teacher_img_4.png" alt="Main Image" width="300" height="80">
+                        <img src="/CA project/images/main_teacher_img_5.png" alt="Main Image" width="300" height="80">
+                        <img src="/CA project/images/main_teacher_img_5.png" alt="Main Image" width="300" height="80">
+                    </figure>
+                </marquee>
+            </div>
+
+            <div class="main_content">
+                <h1>Faculty Feedback & Course Evaluation Portal</h1>
+                <p class="main_content_p1">
+                    Your Feedback. Better Learning. Smarter Decisions.
+                </p>
+                <p class="main_content_p2">
+                    Enhance the quality of education through a smarter and more organized feedback system. The Faculty
+                    Feedback & Course Evaluation Portal allows students to evaluate courses and faculty members through
+                    structured rating forms and anonymous feedback.
+                </p>
+                <p class="main_content_p3">
+                    With secure student authentication, validated submissions, interactive reports, and an administrator dashboard, the platform transforms student feedback into meaningful insights that support continuous academic improvement.
+                </p>
+                <span class="main_content_span_1">
+                    Key Features:
+                </span>
+                <ul class="main_content_ul_1">
+                    <li>Student Authentication</li>
+                    <li>Anonymous Feedback </li>
+                    <li>Interactive Reports and Analytics</li>
+                    <li>Administrator Dashboard for Efficient Management</li>
+                    <li>Validated Submissions for Accurate Data</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    
+    <!-- sidebar  [fixed](position:left)-->
+    
+    <aside class="aside">
+        <nav class="aside_nav">
+            <div class="aside_nav_home">
+                <a href="">Home</a>
+            </div>
+            <div class="aside_nav_dashboard">
+                <a href="">Dashboard</a>
+            </div>
+            <div class="aside_nav_my_courses">
+                <a href="">My Courses</a>
+            </div>
+            <div class="aside_nav_faculty_profile">
+                <a href="">Faculty Profile</a>
+            </div>
+            <div class="aside_nav_submit_feedback">
+                <a href="">Submit Feedback</a>
+            </div>
+            <div class="aside_nav_course_reviews">
+                <a href="">Course Reviews</a>
+            </div>
+            <div class="aside_nav_evaluation_history">
+                <a href="">Evaluation History</a>
+            </div>
+            <div class="aside_nav_analytics_reports">
+                <a href="">Analytics & Reports</a>
+            </div>
+            <div class="aside_nav_announcements">
+                <a href="">Announcements</a>
+            </div>
+            <div class="aside_nav_profile_settings">
+                <a href="">Profile Settings</a>
+            </div>
+            <div class="aside_nav_logout">
+                <a href="">Logout</a>
+            </div>
+            
+        </nav>
+    </aside>
+
+
+<!--
+    cuurent previous previous stats shown in a horizontal belt 
+    like total review,student response,overall rating,active evauation,active 
+    courses,active faculty,active students,active departments,active programs
+-->
+
+    <div class="Summary_card">
+        <div class="Summary_card_container">
+            <table class="Summary_card_table" align="center" cellpadding="5" cellspacing="5" border="5">
+                <td>
+                    <div class="Summary_card_border" border-radius="10px">
+                        <div class="overall_rating">
+                            <div>
+                                <p>hello</p>
+                            </div>
+                        </div>   
+                    </div>
+                </td>
+                <td>
+                    <div class="Summary_card_border" border-radius="10px">
+                        <div class="overall_rating">
+                            <div>
+                                <p>hello</p>
+                            </div>
+                        </div>   
+                    </div>
+                </td>
+                <td>
+                    <div class="Summary_card_border" border-radius="10px">
+                        <div class="overall_rating">
+                            <div>
+                                <p>hello</p>
+                            </div>
+                        </div>   
+                    </div>
+                </td>
+                <td>
+                    <div class="Summary_card_border" border-radius="10px">
+                        <div class="overall_rating">
+                            <div>
+                                <p>hello</p>
+                            </div>
+                        </div>   
+                    </div>
+                </td>
+                <td>
+                    <div class="Summary_card_border" border-radius="10px">
+                        <div class="overall_rating">
+                            <div>
+                                <p>hello</p>
+                            </div>
+                        </div>   
+                    </div>
+                </td>
                 </table>
-            </div> 
-        </div>        
-        
+        </div>
+    </div>
+    
+
+    <section class="section">
+        <div class="section_container">
+            <div class="section_content">
+                
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
