@@ -1,0 +1,57 @@
+.login-body {
+    background-image:
+    linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../images/backdroploginpage.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.login-container {
+    display: flex;
+    border-radius: 20px;
+    backdrop-filter: blur(7px);
+    border: 1px solid #ccc;
+    margin: 100px 250px;
+    
+    
+}
+
+.login-left-image {
+    
+    
+    overflow: hidden;
+    text-align: center;
+}
+
+.login-left-image img {
+    display: block;
+    padding: 5px;
+    border-radius: 30px;
+    border: 2px black;
+}
+
+.login-right {
+    text-align: center;
+}
+
+.login-title {
+    color: azure;
+    font-family: "Roboto", sans-serif;
+}
+
+.login-subtitle {
+    font-family: "Roboto", sans-serif;
+    color: rgb(231, 137, 71);
+}
+
+.user-name {
+    color: azure;
+    padding-bottom: 20px;
+}
+
+.pass-word {
+    color: azure;
+    padding-top: 20px;
+}

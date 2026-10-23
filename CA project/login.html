@@ -1,38 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Feedback</title>
 </head>
-<body>
+<body class="login-body">
     <div class="login-container">
         <div class="login-left-image">
-           <!--image yaha add hogi login form k left side wali-->
+           <img src="images/Lovely Professional University 1st in India.png" height="500">
         </div>
-        <div class="login-form">
-            <!--this image is not the left wali, it's for the login form-->
-            <img src="images/lpulogo.png" alt="Logo" class="logo" width="100" height="100">
-        <h1 class="login-title">Lovely Professional University</h1>
-        <h2 class="login-subtitle">Student Login</h2>
+        <div class="login-right">
+            
+            <div class="login-form">
+                <!--this image is not the left wali, it's for the login form-->
+                
+            <h1 class="login-title">Lovely Professional University</h1>
+            <h2 class="login-subtitle">Student Login</h2>
+            </div>
+            <!--pay attention to the div classes below, to be used while styling-->
+                <!--note for reader: method GET is used for now because github has no server for POST. Login will be handled with JavaScript later.-->
+            <form class="login-field" action="index.html" method="get">
+                <div class="user-name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+                <div class="pass-word">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                <div class="login-button">
+                <button type="submit">Login</button>
+            </div>
         </div>
-        <!--pay attention to the div classes below, to be used while styling-->
-            <!--note for reader: method GET is used for now because github has no server for POST. Login will be handled with JavaScript later.-->
-        <form class="login-field" action="index.html" method="get">
-            <div class="user-name">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username" required>
-            </div>
-            <div class="pass-word">
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" placeholder="Enter your password" required>
-            </div>
-            <div class="login-button">
-            <button type="submit">Login</button>
-            </div>
         </form>
     </div>
-    <script src="js/user-session.js" defer></script>
+    
 </body>
 </html>
