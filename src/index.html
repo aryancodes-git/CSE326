@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/colors.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <style>
+      .header-container {
+        display: flex;
+        justify-content: space-between;
+        background-color: var(--retro-orange);
+        align-items: center;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        box-shadow: 0.25rem 0.25rem var(--asphalt);
+      }
+      .header-logo-title {
+        display: flex;
+        gap: 0.4rem;
+        align-items: center;
+      }
+      .page-title {
+        font-size: 1.5rem;
+        font-weight: 600;
+      }
+
+      .content-container {
+        display: flex;
+      }
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+        background-color: var(--retro-orange);
+        padding: 0.5rem;
+        margin: 0.5rem;
+        box-shadow: 0.25rem 0.25rem var(--asphalt);
+        width: 8rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header-container">
+      <div class="header-logo-title">
+        <img
+          src="assets/images/lpulogo.png"
+          alt="university-logo"
+          width="32"
+          height="32"
+        />
+        <span class="page-title">Faculty Feedback & Evaluation Portal</span>
+      </div>
+      <div>
+        <select>
+          <option>Program Code</option>
+          <option>P132 (Computer Science & Engineering Core)</option>
+        </select>
+      </div>
+      <div>
+        <button name="notification">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bell preview-icon"
+          >
+            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+            <path
+              d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+            />
+          </svg>
+        </button>
+        <button name="profile">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user preview-icon"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </button>
+        <button name="settings">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-settings preview-icon"
+          >
+            <path
+              d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+            />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </button>
+        <button name="logout">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-power preview-icon"
+          >
+            <path d="M12 2v10" />
+            <path d="M18.4 6.6a9 9 0 1 1-12.77.04" />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <div class="content-container">
+      <aside class="sidebar">
+        <button>Home</button>
+        <button>My Courses</button>
+        <button>Faculty</button>
+        <button>History</button>
+      </aside>
+      <main>
+        <h2>Announcements</h2>
+        <div class="main_container">
+          <div class="main_content">
+            <p class="main_content_p1">
+              Your Feedback. Better Learning. Smarter Decisions.
+            </p>
+            <p class="main_content_p2">
+              Enhance the quality of education through a smarter and more
+              organized feedback system. The Faculty Feedback & Course
+              Evaluation Portal allows students to evaluate courses and faculty
+              members through structured rating forms and anonymous feedback.
+            </p>
+            <p class="main_content_p3">
+              With secure student authentication, validated submissions,
+              interactive reports, and an administrator dashboard, the platform
+              transforms student feedback into meaningful insights that support
+              continuous academic improvement.
+            </p>
+            <span class="main_content_span_1"> Key Features: </span>
+            <ul class="main_content_ul_1">
+              <li>Student Authentication</li>
+              <li>Anonymous Feedback</li>
+              <li>Interactive Reports and Analytics</li>
+              <li>Administrator Dashboard for Efficient Management</li>
+              <li>Validated Submissions for Accurate Data</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!--
+    cuurent previous previous stats shown in a horizontal belt 
+    like total review,student response,overall rating,active evauation,active 
+    courses,active faculty,active students,active departments,active programs
+-->
+  </body>
+</html>
