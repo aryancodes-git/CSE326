@@ -1,340 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--link to style.css, title-->
-
-
-
 <head>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Document</title>
 </head>
-
-
-
-<!--lpu logo and project title. Nav links for the top bar are also here-->
-
 <body>
-
-
-    <header class="header">
-
-        <!-- now in div -->
-
-        <div class="header_content"
-            style="display: flex; justify-content: space-between; align-items: center; position: relative;">
-
-            <div class="logo&title" style="display: flex; align-items: center; gap: 10px;">
-                <img src="images/lpulogo.png" alt="Logo" class="logo" width="50" height="50">
-                <div style="display: inline-block;">
-                    <strong>Faculty Feedback</strong></span>
-                    <small style="display: block;">& evaluation portal</small>
-                </div>
+    <header class="index_header">
+        <div class="header_content">
+            <div class="logo_header">
+                <img src="images\lpulogo.png" alt="lpu header logo">
+            </div>        
+            <div class="header_nav">
+                <ul>
+                    <div class="header_nav_home">
+                        <li>
+                            Home
+                        </li>
+                    </div>
+                    .header_nav_
+                    <li>
+                        <details>
+                            <summary>Dashboard</summary>
+                            <ul>
+                                <li>
+                                    My Cources
+                                </li>
+                                <li>
+                                    Faculity Profile
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        <details>
+                            <summary>
+                                Feedback
+                            </summary>
+                            <ul>
+                                <li>
+                                    Cource Review
+                                </li>
+                                <li>
+                                    Evaluation History
+                                </li>
+                                <li>
+                                    Analytics & Review
+                                </li>
+                            </ul>
+                        </details>
+                    </li>
+                    <li>
+                        Announcement
+                    </li>
+                </ul>    
             </div>
-
-            <!--  ***change**** "nav is in div & in table now" -->
-            <div class="nav" style="display: flex; gap: 25px; position: absolute; transform: translateX(-50%);">
-
-                <div class="nav" style="display: inline-block; margin-left: 350px">
-                    <nav class="nav" style="display: inline-block; margin-left: 350px">
-                        <table class="nav-table">
-                            <div class="nav_item_dashboard">
-                                <td>
-                                    <a href="index.html">Dashboard</a>
-                                </td>
-                            </div>
-                            <div class="nav_item_feedback">
-                                <td>
-                                    <a href="feedback.html">Feedback</a>
-                                </td>
-                            </div>
-                            <div class="nav_item_admin">
-                                <td>
-                                    <a href="admin.html">Admin</a>
-                                </td>
-                            </div>
-                        </table>
-                    </nav>
-                </div>
-
-
-
-                <!--below is notification and the dropdown menu for profile-->
-
-                <div class="notification_&_profile" style="display: flex; gap: 15px;">
-                    <table>
-                        <td><img src="images/noti.png" alt="Notification" width="30" height="30"></td>
-                        <td>
-                            <span>
-                                <details style="display: inline-block;">
-                                    <summary style="margin-left: 10px">
-                                        <img src="images/profile.png" alt="Profile" width="30" height="30">
-                                    </summary>
-                                    <nav style="margin-left: 10px">
-                                        <div class="profile_nav_profile">
-                                            <a href="#">Profile</a>
-                                        </div>
-                                        <div class="profile_nav_login">
-                                            <a href="login.html">Login</a>
-                                        </div>
-                                        <div class="profile_nav_settings">
-                                            <a href="#">Settings</a>
-                                        </div>
-                                        <div class="profile_nav_logout">
-                                            <a href="#">Logout</a>
-                                        </div>
-                                    </nav>
-                                </details>
-                            </span>
-                        </td>
-                    </table>
-                </div>
+            <div class="header_profile">
+                <img src="images\profile.png" alt="header_profile">
             </div>
         </div>
     </header>
+    <main class="index_main">
+        <div class="main_container">
+            <div class="main_text">
+                <h1 class="main_heading">
+                   <p class="main_heading_line_1">Your Feedback</p>
+                   <p class="main_heading_line_2">Shapes a Better Tomorrow</p>
+                </h1>
+                <p class="main_text">
+                    The Faculty Feedback & Course Evaluation Portal helps students share their honest feedback about courses and faculty members, while enabling administrators to analyze insights through reports and dashboards.
+                </p>
 
-<!-- Main Content -->
- <!-- 
-    there are 2 main divs in the main content section, one for the image and one for the text.
-    The image div contains a figure with multiple images of teachers.
-    The text div contains a heading, paragraphs, and a list of key features.
-    i think of 2 way like 
-            (vertical approach)        1 --- we can use figure as marque or use some other css and then text shows up and down with some css animation.
-            (horizontal approach)      2 --- we can dive the div container into 2 divs 
-                                              a -- one div show some text
-                                              b -- other div show img with some css animation.
-
-        img are as temp example
- -->
-    
-    
-
-    <main class="main">
-        <div class="main_container" >
-
+            </div>
             <div class="main_image">
-                <marquee behavior="20" direction="center" scrollamount="5" style="width: 100%; height: 100%;">
-                    <figure>
-                        <img src="/CA project/images/main_teacher_img_1.png" alt="Main Image" width="300" height="80">
-                        <img src="/CA project/images/main_teacher_img_2.png" alt="Main Image" width="300" height="80">
-                        <img src="/CA project/images/main_teacher_img_3.png" alt="Main Image" width="300" height="80">
-                        <img src="/CA project/images/main_teacher_img_4.png" alt="Main Image" width="300" height="80">
-                        <img src="/CA project/images/main_teacher_img_5.png" alt="Main Image" width="300" height="80">
-                        <img src="/CA project/images/main_teacher_img_5.png" alt="Main Image" width="300" height="80">
-                    </figure>
-                </marquee>
+                <img src="images\main_teacher_img_1.png" alt="main container image " width="20" >
             </div>
-
-            <div class="main_content">
-                <h1>Faculty Feedback & Course Evaluation Portal</h1>
-                <p class="main_content_p1">
-                    Your Feedback. Better Learning. Smarter Decisions.
-                </p>
-                <p class="main_content_p2">
-                    Enhance the quality of education through a smarter and more organized feedback system. The Faculty
-                    Feedback & Course Evaluation Portal allows students to evaluate courses and faculty members through
-                    structured rating forms and anonymous feedback.
-                </p>
-                <p class="main_content_p3">
-                    With secure student authentication, validated submissions, interactive reports, and an administrator dashboard, the platform transforms student feedback into meaningful insights that support continuous academic improvement.
-                </p>
-                <span class="main_content_span_1">
-                    Key Features:
-                </span>
-                <ul class="main_content_ul_1">
-                    <li>Student Authentication</li>
-                    <li>Anonymous Feedback </li>
-                    <li>Interactive Reports and Analytics</li>
-                    <li>Administrator Dashboard for Efficient Management</li>
-                    <li>Validated Submissions for Accurate Data</li>
-                </ul>
-            </div>
-        </div>
+            <div class="login_button">
+                <button>
+                    <a href="feedback.html"><span class="login_text">Login</span></a> 
+                </button>
+            </div>    
+        </div>        
     </main>
-
-    
-    <!-- sidebar  [fixed](position:left)-->
-    
-    <aside class="aside">
-        <div class="sidebar">
-            <div class="logo">
-                <a href="">lpu faculity fedback</a>
+    <section class="index_section">
+        <div class="section_text1">
+           <p class="text1_l1">
+                Scale academic excellence and trust with ease
+            </p>
+           <p class="text1_l2">
+                Every evaluation at Lovely Professional University triggers concrete institutional actions. Last cycle's
+                feedback ratified ₹12+ Crore in lab upgrades, syllabus modernization, and rapid assessment
+                guarantees.
+            </p>
+        </div>
+        <!-- Summary Cards -->
+        <!-- ****** summary_cards = sc -->
+        <div class="summary_card">
+            <div class="summary_card_1">
+                <div class="sc1_logo">
+                    <p class="material-symbols-outlined">
+                        supervisor_account
+                    </p>
+                    <p class="sc1_l1">
+                        Student Driven
+                    </p>
+                    <p class="sc1_l2">
+                        Share your valuable feedback
+                        on courses and faculty members.
+                    </p>
+                </div>
+            </div>
+            <div class="summary_card_2">
+                
+                <div class="sc2_logo">
+                    <p class="material-symbols-outlined">
+                        security
+                    </p>
+                    <p class="sc2_l1">
+                        Anonymous & Secure
+                    </p>
+                    <p class="sc2_l2">
+                        Your feedback remains
+                        anonymous with proper validation
+                        to prevent duplicate or invalid
+                        submissions.
+                    </p>
+                </div>
+            </div>
+            <div class="summary_card_3">
+                <div class="sc3_logo">
+                    <p class="material-symbols-outlined">
+                        bar_chart
+                    </p>
+                    <p class="sc3_l1">
+                        Data Driven Insights
+                    </p>
+                    <p class="sc3_l2">
+                        Helps administrators make
+                        informed decisions with
+                        real-time reports and analytics.
+                    </p>
+                </div>
+            </div>
+            <div class="summary_card_4">
+                <div class="sc4_logo">
+                    <p class="material-symbols-outlined">
+                        school
+                    </p>
+                    <p class="sc4_l1">
+                        Improves Learning
+                    </p>
+                    <p class="sc4_l2">
+                        Builds a better academic
+                        environment for everyone
+                        at LPU.
+                    </p>
+                </div>
             </div>
         </div>
-        <div>
-            <nav class="aside_nav">
-                <div class="aside_nav_home">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-house"></i>
-                            <a href="">Home</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_dashboard">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-gauge-simple-high"></i>
-                            <a href="">Dashboard</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_my_courses">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-folder-open"></i>
-                            <a href="">My Courses</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_faculty_profile">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-user"></i>
-                            <a href="">Faculty Profile</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_submit_feedback">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-thumbs-up"></i>
-                            <a href="">Submit Feedback</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_course_reviews">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-code-compare"></i>
-                            <a href="">Course Reviews</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_evaluation_history">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-clock-rotate-left"></i>
-                            <a href="">Evaluation History</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_analytics_reports">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-chart-line"></i>
-                            <a href="">Analytics & Reports</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_announcements">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-bullhorn"></i>
-                            <a href="">Announcements</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_profile_settings">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-user-gear"></i>
-                            <a href="">Profile Settings</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="aside_nav_logout">
-                    <ul>
-                        <li>
-                            <i class="fa-solid fa-right-from-bracket"></i>
-                            <a href="">Logout</a>
-                        </li>
-                    </ul>
-                </div>
-
-            </nav>
+        <!-- Survey data will be populated here -->
+         <!-- survey_data = sd -->
+        <div class="survey_data">
+            <div class="sd_1">
+                <p class="material-symbols-outlined">
+                    groups
+                </p>
+                <p class="sd_1_l1">
+                    5000+
+                </p>
+                <p class="sd_1_l2">
+                    Students
+                </p>
+            </div>
+            <div class="sd_2">
+                <p class="material-symbols-outlined">
+                    person
+                </p>
+                <p class="sd_2_l1">
+                    100+
+                </p>
+                <p class="sd_2_l2">
+                    Faculty Members
+                </p>
+            </div>
+            <div class="sd_3">
+                <p class="material-symbols-outlined">
+                    menu_book
+                </p>
+                <p class="sd_3_l1">
+                    50+
+                </p>
+                <p class="sd_3_l2">
+                    Courses
+                </p>
+            </div>
+            <div class="sd_4">
+                <p class="material-symbols-outlined">
+                    trending_up
+                </p>
+                <p class="sd_4_l1">
+                    100%
+                </p>
+                <p class="sd_4_l2">
+                    Improvement
+                </p>
+            </div>
+            <div class="sd_5">
+                <p class="sd_5_l1">
+                    Real Feedback
+                </p>
+                <p class="sd_5_l2">
+                    Real Change
+                </p>
+            </div>
         </div>
-        <!-- bottom social media links in the sidebar present in aside tag -->
-        <div class="sidebar_social_media">
-            <ul>
-                <a href=""><i class="fa-brands fa-instagram"></i></a>
-                <a href=""><i class="fa-brands fa-square-tumblr"></i></a>
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=""><i class="fa-brands fa-youtube"></i></a>
-            </ul>
-        </div>
-    </aside>
-
-
-<!--
-    cuurent previous previous stats shown in a horizontal belt 
-    like total review,student response,overall rating,active evauation,active 
-    courses,active faculty,active students,active departments,active programs
--->
-
-    <div class="Summary_card">
-        <div class="Summary_card_container">
-            <table class="Summary_card_table" align="center" cellpadding="5" cellspacing="5" border="5">
-                <td>
-                    <div class="Summary_card_border" border-radius="10px">
-                        <div class="overall_rating">
-                            <div>
-                                <p>hello</p>
-                            </div>
-                        </div>   
-                    </div>
-                </td>
-                <td>
-                    <div class="Summary_card_border" border-radius="10px">
-                        <div class="overall_rating">
-                            <div>
-                                <p>hello</p>
-                            </div>
-                        </div>   
-                    </div>
-                </td>
-                <td>
-                    <div class="Summary_card_border" border-radius="10px">
-                        <div class="overall_rating">
-                            <div>
-                                <p>hello</p>
-                            </div>
-                        </div>   
-                    </div>
-                </td>
-                <td>
-                    <div class="Summary_card_border" border-radius="10px">
-                        <div class="overall_rating">
-                            <div>
-                                <p>hello</p>
-                            </div>
-                        </div>   
-                    </div>
-                </td>
-                <td>
-                    <div class="Summary_card_border" border-radius="10px">
-                        <div class="overall_rating">
-                            <div>
-                                <p>hello</p>
-                            </div>
-                        </div>   
-                    </div>
-                </td>
-                </table>
-        </div>
-    </div>
+    </section>
     
+    <!-- how the review system work -->
+     <!-- about_feedback = --af -->
+    <section class="about_feedback">
+        <div class="af_t1">
+            <p class="af_t1_l1">
+                How the Feedback Cycle Works
+            </p>
+            <p class="af_t1_l2">
+                From opening the questionnaire to publishing departmental corrective action items.
+            </p>
+        </div>
 
-    <section class="section">
-        <div class="section_container">
-            <div class="section_content">
-                
+        <!-- feedback steps in the card -->
+        <!-- feedback_steps = fs -->
+        <div class="feedback_steps">
+            <!-- feedback_step_card = fsc -->
+            <div class="fsc_1">
+                <div class="fsc_1_logo">
+                    <p class="material-symbols-outlined">
+                        counter_1
+                    </p>
+                </div>
+                <div class="fsc_1_t1">
+                    <p class="fsc_1_t1_l1">
+                        UMS Single Sign-On
+                    </p>
+                    <p class="fsc_1_t1_l2">
+                        Verify active term registration via
+                        your standard credentials to
+                        guarantee enrolled course
+                        eligibility.
+                    </p>
+                </div>
+                <div class="fsc_1_t2_l1">
+                    <p class="fsc_1_t2_l1">
+                        <span class="material-symbols-outlined">
+                                verified
+                        </span>
+                        Course Access Validated
+                    </p>
+                </div>
+            </div>
+            <div class="fsc_2">
+                <div class="fsc_2_logo">
+                    <p class="material-symbols-outlined">
+                        counter_2
+                    </p>
+                </div>
+                <div class="fsc_2_t1">
+                    <p class="fsc_2_t1_l1">
+                        Hash Disconnect
+                    </p>
+                    <p class="fsc_2_t1_l2">
+                        The gateway creates a blind
+                        cryptographic receipt, unlinking
+                        your registration number from
+                        your session payload
+                        permanently.
+                    </p>
+                </div>
+                <div class="fsc_2_t2_l1">
+                    <p class="fsc_2_t2_l1">
+                        Identity Severed
+                    </p>
+                </div>
+            </div>
+            <div class="fsc_3">
+                <div class="fsc_3_logo">
+                    <p class="material-symbols-outlined">
+                        counter_3
+                    </p>
+                </div>
+                <div class="fsc_3_t1">
+                    <p class="fsc_3_t1_l1">
+                        Objective Appraisal
+                    </p>
+                    <p class="fsc_3_t1_l2">
+                        Rate pedagogy, course pace, lab
+                        mentorship, and qualitative
+                        suggestions through structured
+                        5-point Likert metrics.
+                    </p>
+                </div>
+                <div class="fsc_3_t2_l1">
+                    <p class="fsc_3_t2_l1">
+                        12-Minute Completion
+                    </p>
+                </div>
+            </div>
+            <div class="fsc_4">
+                <div class="fsc_4_logo">
+                    <p class="material-symbols-outlined">
+                        counter_4
+                    </p>
+                </div>
+                <div class="fsc_4_t1">
+                    <p class="fsc_4_t1_l1">
+                        Ledger Publication
+                    </p>
+                    <p class="fsc_4_t1_l2">
+                        Following official semester grade
+                        locks, aggregated ratings feed
+                        university promotion committees
+                        and Dean performance dossiers.
+                    </p>
+                </div>
+                <div class="fsc_4_t2_l1">
+                    <p class="fsc_4_t2_l1">
+                        Post-Grading Release
+                    </p>
+                </div>
             </div>
         </div>
     </section>
 </body>
-
 </html>
