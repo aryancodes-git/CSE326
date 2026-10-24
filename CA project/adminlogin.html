@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/loginpage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Feedback</title>
+</head>
+<body class="login-body-admin">
+    <div class="login-container">
+        <div class="login-left-image">
+           <img src="images/Lovely Professional University 1st in India.png" height="500">
+        </div>
+        <div class="login-right">
+            
+            <div class="login-form">
+                
+            <h1 class="login-title">Lovely Professional University</h1>
+            <h2 class="login-subtitle">Admin Login</h2>
+            </div>
+            
+                <!--note for reader: method GET is used for now because github has no server for POST. Login will be handled with JavaScript later.-->
+            <form class="login-field" action="index.html" method="get">
+
+                <div class="user-name">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="pass-word">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                </div>
+                
+                <div class="remember-me-forgot">
+                    <label class="remember"><input type="checkbox">Remember me</label>
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+                <div class="login-button">
+                <button id="loginbutton" type="submit">Login</button>
+            </div>
+        </div>
+        </form>
+    </div>
+    
+</body>
+</html>
