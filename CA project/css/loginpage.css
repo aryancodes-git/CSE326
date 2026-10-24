@@ -1,8 +1,14 @@
+@keyframes homeAnimation {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 .login-body {
     background-image:
     linear-gradient(rgba(238, 193, 142, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../images/backdroploginpage.jpg");
-
+    url("../images/bg image.png");
+    animation-name: homeAnimation;
+    animation-duration: 2s;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -125,4 +131,14 @@
     .login-left-image {
         max-height: 250px;
     }
+}
+
+.login-body-admin {
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(130, 10, 146, 0.25)),
+    url("../images/backdroploginpage.jpg");
+
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
