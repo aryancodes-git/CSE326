@@ -17,24 +17,30 @@
         <div class="login-right">
             
             <div class="login-form">
-                <!--this image is not the left wali, it's for the login form-->
                 
             <h1 class="login-title">Lovely Professional University</h1>
             <h2 class="login-subtitle">Student Login</h2>
             </div>
-            <!--pay attention to the div classes below, to be used while styling-->
+            
                 <!--note for reader: method GET is used for now because github has no server for POST. Login will be handled with JavaScript later.-->
             <form class="login-field" action="index.html" method="get">
+
                 <div class="user-name">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Enter your username" required>
                 </div>
+
                 <div class="pass-word">
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 </div>
+                
+                <div class="remember-me-forgot">
+                    <label class="remember"><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
                 <div class="login-button">
-                <button type="submit">Login</button>
+                <button id="loginbutton" type="submit">Login</button>
             </div>
         </div>
         </form>
