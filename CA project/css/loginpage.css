@@ -101,13 +101,16 @@
 
 }
 #loginbutton {
-    border: 1px solid #f1c157;
+    border: 1px solid #f19f57;
     border-radius: 10px;
     outline: none;
     padding: 10px;
     width: 50%;
-    background-color: #f1c157;
+    background-color: #ebaa49;
     size: 100%;
+}
+.forgot {
+    color: #ebaa49;
 }
 
 .remember-me-forgot {
