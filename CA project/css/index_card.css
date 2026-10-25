@@ -1,0 +1,206 @@
+
+/*  main tag css is here */
+
+.index_main {
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
+    opacity: 70%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: 20px 10px 25px 10px;
+}
+
+.main_text_container {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    padding: 2px;
+}
+.main_text {
+    height: 100%;
+    width: 70%;
+    margin: 10px 10px 10px 10px;
+    padding: 2px;
+}
+
+.main_heading_line_1 {
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    margin: 10px 10px 10px 10px;
+}
+
+.main_heading_line_2 {
+    font-size: 35px;
+    color: white;
+    margin: 0px 0px 0px 20px;
+}
+
+.main_text_l1 {
+    align-items: left;
+    font-size: 18px;
+    color: white;
+    margin: 40px 10px 10px 55px;
+}
+
+.main_text_l2 {
+    font-size: 18px;
+    color: white;
+    margin: 10px 10px 10px 55px;
+}
+.main_text_l3 {
+    font-size: 18px;
+    color: white;
+    margin: 10px 10px 10px 55px;
+}
+.main_text_l4 {
+    font-size: 18px;
+    color: white;
+    margin: 10px 10px 10px 55px;
+}
+
+.main_image img{
+    display: flex;
+    flex-direction:row;      
+    flex: 1;
+    width: 90%;
+    height: 90%;
+    margin: 0px 10px 10px 10px;
+    border-radius: 10px;
+}
+
+/* colour seting is pending here */
+.login_button_container {
+    color: rgb(0, 3, 6);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start; 
+    align-items: center;   
+    margin: -70px 0px 0px 450px;                
+}
+.login_button button {
+    display: flex;
+    flex-direction: row;
+    border-radius: 13px;
+}
+
+
+/* section tag css is here ln 76 -- ln 208 */
+
+
+
+/* make this better  {  :(  } */
+/* .section_text1 {
+    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
+    opacity: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    margin: -90px 8px 25px 8px;
+} */
+
+
+
+.text1_l1 {
+    font-size: 45px;
+    color: white;
+    text-align: center;
+    margin: 100px 400px 10px 400px;
+}
+
+.text1_l2 {
+    font-size: 18px;
+    color: white;
+    text-align:center;
+    margin: 20px 390px 10px 390px;
+}
+.text1_l3 {
+    font-size: 18px;
+    color: white;
+    text-align:center;
+    margin: -8px 400px 10px 400px;
+}
+
+.summary_card {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.summary_card_1,.summary_card_2,.summary_card_3,.summary_card_4 {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
+    opacity: 70%;
+    border-radius: 10px;
+    margin: 100px 10px 25px 10px;
+}
+
+.sc1_l1,.sc2_l1,.sc3_l1,.sc4_l1 {
+    font-size: 20px;
+    color: white;
+    margin: 10px 10px 10px 10px;
+}
+.sc1_l2,.sc2_l2,.sc3_l2,.sc4_l2 {
+    font-size: 15px;
+    color: white;
+    margin: 10px 10px 10px 10px;
+}
+.material-symbols-outlined {
+    margin: 10px 10px 10px 10px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+.survey_data {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 10px 10px 10px;
+    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
+    border-radius: 10px;
+    gap: 20px;
+
+}
+
+.sdc_1,.sdc_2,.sdc_3,.sdc_4,.sdc_5{
+    
+    flex: 1;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    
+
+}
+
+.sd_1_t, .sd_2_t, .sd_3_t, .sd_4_t {
+    display: flex;
+    flex-direction:column;
+
+}
+
+.sd_1_l1,.sd_2_l1,.sd_3_l1,.sd_4_l1 {
+    flex:1;
+    display: block;   
+    font-size: 20px;
+    color: white;
+    margin: 10px 10px 10px 10px;
+}
+.sd_1_l2,.sd_2_l2,.sd_3_l2,.sd_4_l2 {
+    flex:1;
+    font-size: 15px;
+    color: white;
+    margin: 10px 10px 10px 10px;
+    
+}
