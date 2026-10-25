@@ -10,7 +10,7 @@ loginDropdown.addEventListener("change", function(event){
     if (selectedValue == "admin"){
         redirectUrl = "admin.html"
     } else if (selectedValue == "student"){
-        redirectUrl = "index.html"
+        redirectUrl = "student.html"
     }
 })
 

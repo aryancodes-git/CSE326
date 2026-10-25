@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Page</title>
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/global.css" />
+
+    <style>
+      .topbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: var(--deep-red);
+        color: var(--paper);
+      }
+
+      .topbar-button{
+        background-color: var(--deep-red);
+        border: none;
+        padding: 0.2rem;
+        color: var(--paper)
+      }
+
+      .topbar-button:hover{
+        background-color: var(--burgundy);
+      }
+
+      .page-title {
+        font-family: "Amethysta";
+        font-weight: 1000;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .page-title-logo{
+        width: 2rem;
+        height: auto;
+      }
+
+      .search-bar {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .content-container {
+        display: flex;
+      }
+
+      .sidebar {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="topbar">
+      <div style="display: flex; align-items: center; gap:1rem;">
+        <span class="page-title">
+            <img src="images/icons/lpu logo.png" class="page-title-logo">
+            LPU Feedback </span>
+        <select style="height:fit-content">
+          <option>filter by programs</option>
+          <option>P132 (Computer Science & Engineering)</option>
+        </select>
+      </div>
+      <span class="search-bar">
+        <label
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-search preview-icon"
+          >
+            <path d="m21 21-4.34-4.34" />
+            <circle cx="11" cy="11" r="8" /></svg
+        ></label>
+        <input type="search" placeholder="search courses, faculty.." />
+      </span>
+      <span>
+        <button class="topbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-bell preview-icon"
+          >
+            <path d="M10.268 21a2 2 0 0 0 3.464 0" />
+            <path
+              d="M3.262 15.326A1 1 0 0 0 4 17h16a1 1 0 0 0 .74-1.673C19.41 13.956 18 12.499 18 8A6 6 0 0 0 6 8c0 4.499-1.411 5.956-2.738 7.326"
+            />
+          </svg>
+        </button>
+        <button class="topbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user preview-icon"
+          >
+            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+        </button>
+        <button class="topbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-settings preview-icon"
+          >
+            <path
+              d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915"
+            />
+            <circle cx="12" cy="12" r="3" />
+          </svg>
+        </button>
+        <button class="topbar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-power preview-icon"
+          >
+            <path d="M12 2v10" />
+            <path d="M18.4 6.6a9 9 0 1 1-12.77.04" />
+          </svg>
+        </button>
+      </span>
+    </div>
+    <div class="content-container">
+      <aside class="sidebar">
+        <button id="home-button">Home</button>
+        <button>Dashboard</button>
+        <button>My Courses</button>
+        <button>Submit Feedback</button>
+        <button>Announcements</button>
+      </aside>
+      <main>Content here</main>
+    </div>
+    \
+    <script src="js/student.js"></script>
+  </body>
+</html>

@@ -1,3 +1,8 @@
+html, body{
+    color: rgb(242, 220, 191);
+}
+
+
 .index-body {
     background-color: rgb(242, 220, 191);
     background-image:
@@ -22,6 +27,7 @@
     animation-name: homeAnimation;
     animation-duration: 5s;
     display: flex;
+    justify-content: space-between;
     border-radius: 20px;
     align-items: center;
     background-color: rgba(228, 222, 222, 0.126);
