@@ -55,16 +55,51 @@
       .sidebar {
         display: flex;
         flex-direction: column;
-        background-color: var(--teracotta);
+        background-color: var(--deep-red);
+        padding: 0.5rem;
+        margin: 0.5rem;
       }
 
       .faculty-card {
         padding: 1rem;
+        margin: 0.5rem;
+        background-color: var(--paper);
       }
 
       .teacher-icon {
         width: 72px;
         height: auto;
+      }
+      .sidebar-button{
+        background-color: var(--deep-red);
+        color: var(--paper);
+        border: none;
+        margin: 0.2rem;
+        padding: 0.4rem;
+        font-size: 1rem;
+      }
+
+      .sidebar-button:hover{
+        background-color: var(--burgundy);
+      }
+
+      .faculty-section-title{
+        font-family: "Roboto";
+        color: var(--burgundy);
+      }
+
+      .rate-professor-button{
+        background-color: var(--deep-red);
+        border: none;
+        font-size: 1rem;
+        color: var(--paper);
+        width: fit-content;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        border-radius: 0.5rem;
+      }
+
+      .rate-professor-button:hover{
+        background-color: var(--burgundy);
       }
     </style>
   </head>
@@ -177,14 +212,14 @@
     </div>
     <div class="content-container">
       <aside class="sidebar">
-        <button id="home-button">Home</button>
-        <button>Dashboard</button>
-        <button>My Courses</button>
-        <button>Submit Feedback</button>
-        <button>Announcements</button>
+        <button class="sidebar-button" id="home-button">Home</button>
+        <button class="sidebar-button">Dashboard</button>
+        <button class="sidebar-button">My Courses</button>
+        <button class="sidebar-button">Submit Feedback</button>
+        <button class="sidebar-button">Announcements</button>
       </aside>
       <main>
-          <h1>Top Rated Faculty</h1>
+          <h1 class="faculty-section-title">Top Rated Faculty</h1>
         <section class="top-rated-faculty" style="display:flex;">
             <div class="faculty-card">
           <div style="display: flex; flex-direction: row">
@@ -223,7 +258,7 @@
           </div>
         </div>
         </section>
-        <h1>Your Faculty</h1>
+        <h1 class="faculty-section-title">Your Faculty</h1>
         <section class="program-related-faculty" style="display:flex;">
             <div class="faculty-card">
           <div style="display: flex; flex-direction: row">
