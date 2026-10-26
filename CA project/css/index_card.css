@@ -145,18 +145,34 @@
     flex: 1;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
     opacity: 70%;
     border-radius: 10px;
     margin: 100px 10px 25px 10px;
 }
 
-.sc1_l1,.sc2_l1,.sc3_l1,.sc4_l1 {
+.summary_card_logo .material-symbols-outlined{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin: auto;
+    font-size: 30px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+}
+
+
+.summary_card_line_1 {
     font-size: 20px;
     color: white;
     margin: 10px 10px 10px 10px;
 }
-.sc1_l2,.sc2_l2,.sc3_l2,.sc4_l2 {
+.summary_card_line_2 {
     font-size: 15px;
     color: white;
     margin: 10px 10px 10px 10px;
@@ -176,64 +192,65 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 100px 10px 10px 10px;
-    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
+    margin: 100px auto;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     gap: 20px;
 
 }
 
 /* fix the logo size here */
-.sdc_1,.sdc_2,.sdc_3,.sdc_4{
-    
+.survey_data_container{
     flex: 1;
-    
     border-radius: 10px;
     align-items: baseline;
 }
 
-.sdc_c1,.sdc_c2,.sdc_c3,.sdc_c4 {
+.survey_data_container_content {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.sd_1,.sd_1_t,.sd_2,.sd_2_t,.sd_3,.sd_3_t,.sd_4,.sd_4_t{
+.survey_data_text{
     flex: 1;
 }
 
 
-.sd_1,.sd_2,.sd_3,.sd_4{
-    width: 70px;
-    height: 60px;
-    size-adjust: 50px;
-    margin: 20px -150px 10px 20px 
-}
 
-.sd_1_l1,.sd_2_l1,.sd_3_l1,.sd_4_l1 {
+
+.survey_data_line_1{
     font-size: 30px;
-    margin: 10px 10px 10px -10px;
+    margin: auto;
 }
-.sd_1_l2{
-    font-size: 12px;
-    margin: 10px 10px 10px -7px;
+/* survey_data_side_logo :( */
+.sd_side_logo .material-symbols-outlined{
+    margin: 2px 15px 1px 19px;
+    font-size: 40px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.sd_1 material-symbols-outlined{
 
+.sd_break {
+    display: flex;
+    rotate: 90deg;
+    width: 45px;
+    max-width: 45px;
 }
-.sd_2_l2 {
+.survey_data_line_2{
     font-size: 12px;
-    margin: 10px 10px 10px -7px;
+    margin: auto;
 }
-.sd_3_l2 {
-    font-size: 12px;
-    margin: 10px 10px 10px -7px;
-}
-.sd_4_l2 {
-    font-size: 12px;
-    margin: 10px 10px 10px -7px;
-}
+
 .sd_5_l2,.sd_5_l1 {
     font-size: 25px;
     margin: 10px 20px 10px -7px;
@@ -268,57 +285,70 @@
 .feedback_steps{
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    gap: 1px;
     margin: 100px 10px 10px 20px ;
-    border-radius: 10px;
-    border: 2px solid #333333;
+    border-radius: 10px;    
     }
 
-.fsc_1,.fsc_2,.fsc_3,.fsc_4{
+.fsc_top_logo{
+    margin: auto;
+    font-size: 40px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.feedback_step_card {
     flex: 1;
     border: 2px solid #333333;
     margin: 10px 10px 10px 10px ;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+    border-radius: 20px;
 }
-.fsc_1_logo,.fsc_2_logo,.fsc_3_logo,.fsc_4_logo{
+.feedback_step_card_top_logo{
     margin: 10px 0px 10px 15px ;
 
 }
-.fsc_1_t1,.fsc_2_t1,.fsc_3_t1,.fsc_4_t1{
+.feedback_line {
     margin: 10px 120px 10px 20px ;
 }
 
-p.fsc_1_t1_l1, p.fsc_2_t1_l1, p.fsc_3_t1_l1, p.fsc_4_t1_l1 {
+p.feedback_line_1 {
     font-size: 16px;
     font-weight:900;
 }
-p.fsc_1_t1_l2, p.fsc_2_t1_l2, p.fsc_3_t1_l2, p.fsc_4_t1_l2 {
+p.feedback_line_2 {
     font-size: 12px;
 }
 
-.fsc_1_t2, .fsc_2_t2, .fsc_3_t2, .fsc_4_t2 {
+.feedback_bottom_line {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
     overflow: hidden;
     margin: 0px 10px -10px 10px;
 }
 
-.fsc_1_break, .fsc_2_break, .fsc_3_break, .fsc_4_break {
-    margin: 50px 10px 0PX 10px;
+.feedback_break {
+    margin-top: 50px;
     opacity: 50%;
 }
-.fsc_1_t2_l1, .fsc_2_t2_l1, .fsc_3_t2_l1, .fsc_4_t2_l1 {
-    flex: 0 1 auto;
-    height: 20px;
-    width:  20px;
-    margin: 0px 10px 30px -10px;
+.feedback_bottom_line_1 {
+    flex: 0 0 auto;
+    height: auto;
+    width:  auto;
+    margin: 0px ;
     font-size: 10px;
 }
 
-.fsc_1_t2_l1_line, .fsc_2_t2_l1_line, .fsc_3_t2_l1_line, .fsc_4_t2_l1_line {
-    flex: 0 1 auto;
-    margin: 0px 0px 7px 0px;
-
+.feedback_bottom_line_2 {
+    flex: 0 0 auto;
+    margin:0px;
     font-size: 11px;
 }
