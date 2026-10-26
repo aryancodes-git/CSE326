@@ -2,14 +2,15 @@
 /*  main tag css is here */
 
 .index_main {
+    
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
-    height: 60vh;
-    background: linear-gradient(90deg in oklch, oklch(13.83% 0.0267 309.44) 0.0%, oklch(14.50% 0.0284 311.27) 2.1%, oklch(15.27% 0.0305 313.47) 4.3%, oklch(16.15% 0.0330 316.01) 6.4%, oklch(17.12% 0.0359 318.84) 8.5%, oklch(18.18% 0.0391 321.95) 10.6%, oklch(19.31% 0.0425 325.29) 12.8%, oklch(20.52% 0.0461 328.83) 14.9%, oklch(21.78% 0.0499 332.54) 17.0%, oklch(23.09% 0.0538 336.38) 19.1%, oklch(24.44% 0.0577 340.33) 21.3%, oklch(25.82% 0.0617 344.33) 23.4%, oklch(27.23% 0.0657 348.37) 25.5%, oklch(28.65% 0.0696 352.41) 27.7%, oklch(30.08% 0.0734 356.42) 29.8%, oklch(31.50% 0.0770 0.35) 31.9%, oklch(32.91% 0.0804 4.18) 34.0%, oklch(34.30% 0.0836 7.87) 36.2%, oklch(35.65% 0.0864 11.40) 38.3%, oklch(36.97% 0.0890 14.72) 40.4%, oklch(38.24% 0.0911 17.80) 42.6%, oklch(39.45% 0.0928 20.61) 44.7%, oklch(40.59% 0.0940 23.11) 46.8%, oklch(41.66% 0.0947 25.28) 48.9%, oklch(42.66% 0.0948 27.09) 51.1%, oklch(43.64% 0.0944 28.65) 53.2%, oklch(44.61% 0.0935 30.00) 55.3%, oklch(45.57% 0.0920 31.15) 57.4%, oklch(46.52% 0.0902 32.11) 59.6%, oklch(47.46% 0.0879 32.89) 61.7%, oklch(48.38% 0.0853 33.52) 63.8%, oklch(49.29% 0.0825 34.00) 66.0%, oklch(50.18% 0.0793 34.36) 68.1%, oklch(51.05% 0.0760 34.59) 70.2%, oklch(51.89% 0.0725 34.73) 72.3%, oklch(52.72% 0.0689 34.78) 74.5%, oklch(53.51% 0.0652 34.75) 76.6%, oklch(54.29% 0.0615 34.67) 78.7%, oklch(55.03% 0.0578 34.54) 80.9%, oklch(55.74% 0.0541 34.38) 83.0%, oklch(56.42% 0.0506 34.21) 85.1%, oklch(57.07% 0.0472 34.03) 87.2%, oklch(57.68% 0.0440 33.86) 89.4%, oklch(58.25% 0.0411 33.73) 91.5%, oklch(58.78% 0.0384 33.63) 93.6%, oklch(59.27% 0.0361 33.59) 95.7%, oklch(59.72% 0.0341 33.62) 97.9%, oklch(60.13% 0.0326 33.73) 100.0%);
-    opacity: 70%;
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
     margin: 20px 10px 25px 10px;
+    height: 60vh;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+   
 }
 
 .main_text_container {
@@ -88,7 +89,9 @@
 .login_button button {
     display: flex;
     flex-direction: row;
-    border-radius: 13px;
+    border-radius: 15px;
+    border-color: azure;
+    box-shadow: #333333;
 }
 
 
@@ -105,6 +108,10 @@
     margin: -90px 8px 25px 8px;
 } */
 
+.main_image img {
+    padding-top: 25px;
+    border-radius: 20px;
+}
 
 
 .text1_l1 {
@@ -154,14 +161,15 @@
     color: white;
     margin: 10px 10px 10px 10px;
 }
-.material-symbols-outlined {
+/* .material-symbols-outlined {
     margin: 10px 10px 10px 10px;
+    font-size: 40px;
     font-variation-settings:
     'FILL' 0,
     'wght' 400,
     'GRAD' 0,
     'opsz' 48
-}
+} */
 
 .survey_data {
     display: flex;
@@ -179,13 +187,15 @@
 .sdc_1,.sdc_2,.sdc_3,.sdc_4{
     
     flex: 1;
-    margin: 10px 10px 10px 10px;
+    
     border-radius: 10px;
+    align-items: baseline;
 }
 
 .sdc_c1,.sdc_c2,.sdc_c3,.sdc_c4 {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .sd_1,.sd_1_t,.sd_2,.sd_2_t,.sd_3,.sd_3_t,.sd_4,.sd_4_t{
@@ -207,6 +217,10 @@
 .sd_1_l2{
     font-size: 12px;
     margin: 10px 10px 10px -7px;
+}
+
+.sd_1 material-symbols-outlined{
+
 }
 .sd_2_l2 {
     font-size: 12px;
@@ -286,6 +300,7 @@ p.fsc_1_t1_l2, p.fsc_2_t1_l2, p.fsc_3_t1_l2, p.fsc_4_t1_l2 {
     flex-direction: row;
     align-items: center;
     gap: 10px;
+    overflow: hidden;
     margin: 0px 10px -10px 10px;
 }
 
