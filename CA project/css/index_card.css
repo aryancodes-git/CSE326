@@ -180,27 +180,30 @@
     flex: 1;
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
-    
-
 }
 
-.sd_1_t, .sd_2_t, .sd_3_t, .sd_4_t {
+.sdc_c1 {
     display: flex;
-    flex-direction:column;
-
+    flex-direction: row;
 }
 
-.sd_1_l1,.sd_2_l1,.sd_3_l1,.sd_4_l1 {
-    flex:1;
-    display: block;   
-    font-size: 20px;
-    color: white;
-    margin: 10px 10px 10px 10px;
+.sd_1,.sd_1_t {
+    flex: 1;
 }
-.sd_1_l2,.sd_2_l2,.sd_3_l2,.sd_4_l2 {
-    flex:1;
-    font-size: 15px;
-    color: white;
-    margin: 10px 10px 10px 10px;
+
+.sd_1{
+    width: 60;
+    height: 100;
+    margin: 10px 0px 10px 20px 
     
 }
+.sd_1_l1 {
+    font-size: 20px;
+    margin: 10px 10px 10px -10px;
+}
+.sd_1_l2 {
+    font-size: 8px;
+    margin: 10px 10px 10px -10px;
+}
+
+
