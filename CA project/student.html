@@ -48,6 +48,22 @@
         gap: 0.5rem;
       }
 
+      .search-input{
+        background-color: var(--teracotta);
+        border: none;
+        font-size: 1rem;
+        padding: 0.5rem;
+      }
+
+      .search-input-label{
+        background-color: var(--teracotta);
+        padding: 0.5rem;
+      }
+
+      .search-input::placeholder{
+        color: var(--paper);
+      }
+
       .content-container {
         display: flex;
       }
@@ -117,7 +133,7 @@
         </select>
       </div>
       <span class="search-bar">
-        <label
+        <label class="search-input-label" for="search-input"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -133,7 +149,7 @@
             <path d="m21 21-4.34-4.34" />
             <circle cx="11" cy="11" r="8" /></svg
         ></label>
-        <input type="search" placeholder="search courses, faculty.." />
+        <input class="search-input" id="search-input" type="search" placeholder="search courses, faculty.." />
       </span>
       <span>
         <button class="topbar-button">
