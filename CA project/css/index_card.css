@@ -175,35 +175,135 @@
 
 }
 
-.sdc_1,.sdc_2,.sdc_3,.sdc_4,.sdc_5{
+/* fix the logo size here */
+.sdc_1,.sdc_2,.sdc_3,.sdc_4{
     
     flex: 1;
     margin: 10px 10px 10px 10px;
     border-radius: 10px;
 }
 
-.sdc_c1 {
+.sdc_c1,.sdc_c2,.sdc_c3,.sdc_c4 {
     display: flex;
     flex-direction: row;
 }
 
-.sd_1,.sd_1_t {
+.sd_1,.sd_1_t,.sd_2,.sd_2_t,.sd_3,.sd_3_t,.sd_4,.sd_4_t{
     flex: 1;
 }
 
-.sd_1{
-    width: 60;
-    height: 100;
-    margin: 10px 0px 10px 20px 
+
+.sd_1,.sd_2,.sd_3,.sd_4{
+    width: 70px;
+    height: 60px;
+    size-adjust: 50px;
+    margin: 20px -150px 10px 20px 
+}
+
+.sd_1_l1,.sd_2_l1,.sd_3_l1,.sd_4_l1 {
+    font-size: 30px;
+    margin: 10px 10px 10px -10px;
+}
+.sd_1_l2{
+    font-size: 12px;
+    margin: 10px 10px 10px -7px;
+}
+.sd_2_l2 {
+    font-size: 12px;
+    margin: 10px 10px 10px -7px;
+}
+.sd_3_l2 {
+    font-size: 12px;
+    margin: 10px 10px 10px -7px;
+}
+.sd_4_l2 {
+    font-size: 12px;
+    margin: 10px 10px 10px -7px;
+}
+.sd_5_l2,.sd_5_l1 {
+    font-size: 25px;
+    margin: 10px 20px 10px -7px;
+}
+
+
+
+/* how the feedback system work css ln238 -- ln349 */
+
+.page_break_1_{
+    margin: 100px 0px 100px 0px;
+}
+.break_1 {
     
+    margin: 100px 0px 00px 0px;
 }
-.sd_1_l1 {
-    font-size: 20px;
-    margin: 10px 10px 10px -10px;
+.af_t1 {
+    margin: 100px 10px 10px 10px ;
 }
-.sd_1_l2 {
-    font-size: 8px;
-    margin: 10px 10px 10px -10px;
+.af_t1_l1{
+    text-align: center;
+    margin: 0px 0px 6px 0px ;
+    font-size: 40px;
+}
+.af_t1_l2{
+    text-align: center;
+    font-size: 17px;
 }
 
+/* cards starts here */
 
+.feedback_steps{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 100px 10px 10px 20px ;
+    border-radius: 10px;
+    border: 2px solid #333333;
+    }
+
+.fsc_1,.fsc_2,.fsc_3,.fsc_4{
+    flex: 1;
+    border: 2px solid #333333;
+    margin: 10px 10px 10px 10px ;
+}
+.fsc_1_logo,.fsc_2_logo,.fsc_3_logo,.fsc_4_logo{
+    margin: 10px 0px 10px 15px ;
+
+}
+.fsc_1_t1,.fsc_2_t1,.fsc_3_t1,.fsc_4_t1{
+    margin: 10px 120px 10px 20px ;
+}
+
+p.fsc_1_t1_l1, p.fsc_2_t1_l1, p.fsc_3_t1_l1, p.fsc_4_t1_l1 {
+    font-size: 16px;
+    font-weight:900;
+}
+p.fsc_1_t1_l2, p.fsc_2_t1_l2, p.fsc_3_t1_l2, p.fsc_4_t1_l2 {
+    font-size: 12px;
+}
+
+.fsc_1_t2, .fsc_2_t2, .fsc_3_t2, .fsc_4_t2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0px 10px -10px 10px;
+}
+
+.fsc_1_break, .fsc_2_break, .fsc_3_break, .fsc_4_break {
+    margin: 50px 10px 0PX 10px;
+    opacity: 50%;
+}
+.fsc_1_t2_l1, .fsc_2_t2_l1, .fsc_3_t2_l1, .fsc_4_t2_l1 {
+    flex: 0 1 auto;
+    height: 20px;
+    width:  20px;
+    margin: 0px 10px 30px -10px;
+    font-size: 10px;
+}
+
+.fsc_1_t2_l1_line, .fsc_2_t2_l1_line, .fsc_3_t2_l1_line, .fsc_4_t2_l1_line {
+    flex: 0 1 auto;
+    margin: 0px 0px 7px 0px;
+
+    font-size: 11px;
+}
