@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Page</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <style>
+      .topbar-container {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: center;
+      }
+      .topbar {
+        width: 80%;
+      }
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.8em;
+      }
+      .logo-image {
+        width: 5em;
+        height: auto;
+      }
+      .logo-title {
+        display: flex;
+        flex-direction: column;
+      }
+      .logo-title-text {
+        font-size: 1.2em;
+        font-weight: 800;
+        font-family: "Amethysta";
+      }
+      .content-container {
+        background-image: url("images/bg image.png");
+        display: flex;
+        justify-content: center;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+      }
+      .content-title {
+        font-size: 2em;
+        font-weight: 800;
+        font-family: "Amethysta";
+      }
+      .content-image-board-container{
+        position: relative;
+        display: flex;
+        width: 100%;
+      }
+      .content-image-board{
+        width: 60%;
+        height: auto;
+      }
+      .content-image-overlay{
+        background-color: white;
+      }
+      .navigation{
+        display: flex;
+      }
+      .nav-button{
+        background-color: var(--lpu-yellow);
+        margin: 0.2rem 0.1rem 0.2rem 0.1rem;
+        border: none;
+        font-size: 1.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="topbar-container">
+      <header class="topbar">
+        <div class="logo">
+          <img class="logo-image" src="images/icons/lpu logo.png" />
+          <div class="logo-title">
+            <span class="logo-title-text">Lovely</span>
+            <span class="logo-title-text">Professional</span>
+            <span class="logo-title-text">University</span>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="content-container">
+      <main class="content">
+        <span class="content-title">Faculty Feedback</span>
+        <nav class="navigation">
+            <button class="nav-button">home</button>
+            <button class="nav-button">dashboard</button>
+            <button class="nav-button">my courses</button>
+            <button class="nav-button">announements</button>
+        </nav>
+        <div class="content-image-board-container">
+            <img class="content-image-board" src="images/main_teacher_img_1.png">
+            <div class="content-image-overlay">
+                <span class="content-image-overlay-text">give feedback for faculty</span>
+                <button>click here</button>
+            </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
