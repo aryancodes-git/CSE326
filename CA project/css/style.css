@@ -8,8 +8,8 @@ html, body{
 .index-body {
     background-color: rgb(242, 220, 191);
     background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(130, 10, 146, 0.25)),
-    url("../images/bg image.png");
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(5, 0, 0, 0)),
+        url("../images/0ff769dea5fe0c24a3c93f87edf05f16.gif");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -32,9 +32,6 @@ html, body{
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
-    
 }
 
 .header_nav ul li a{
@@ -46,16 +43,23 @@ html, body{
 }
 
 .header-right-button{
-    background-color: rgb(216, 162, 69);
+    background-color: rgb(135, 29, 170);
     border: none;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
     font-weight: 600;
-    color: var(--paper);
 }
 
-.header-right-button:hover{
+.header-left-button{
+    background-color: rgb(135, 29, 170);
+    border: none;
+    font-weight: 600;
+    padding: 15px 35px
+}
+
+#login-redirect-button{
+    padding: 15px 35px;
+}
+
+.header-right-button:hover , .header-left-button:hover{
     background-color: rgb(137, 101, 39);
 }
 
@@ -87,7 +91,7 @@ html, body{
 .home:hover {
     border-bottom: 2px solid white;
     animation-name: slidingbar;
-    animation-duration: 2s;
+    animation-duration: 0.4s;
 }
 @keyframes slidingbar {
     from {border-bottom: none}
@@ -97,10 +101,10 @@ html, body{
 .connect-with-us:hover {
     border-bottom: 2px solid white;
     animation-name: slidingbar;
-    animation-duration: 2s;
+    animation-duration: 0.4s;
 }
 .about:hover {
     border-bottom: 2px solid white;
     animation-name: slidingbar;
-    animation-duration: 2s;
+    animation-duration: 0.4s;
 }

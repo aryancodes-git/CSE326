@@ -7,9 +7,10 @@
     display: flex;
     flex-direction: column;
     margin: 20px 10px 25px 10px;
-    height: 60vh;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    height: auto;
+    min-height: 60vh;
+    background-color: rgba(7, 7, 7, 0.126);
+    backdrop-filter: blur(25px);
    
 }
 
@@ -17,16 +18,18 @@
     display: flex;
     flex-direction: row;
     flex: 1;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: left;
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: auto;
     margin: 10px 10px 10px 10px;
     padding: 2px;
 }
 .main_text {
-    height: 100%;
-    width: 70%;
+    flex: 1 1 320px;
+    width: auto;
+    min-width: 0;
     margin: 10px 10px 10px 10px;
     padding: 2px;
 }
@@ -48,33 +51,23 @@
     align-items: left;
     font-size: 18px;
     color: white;
-    margin: 40px 10px 10px 55px;
+    text-align: left;
 }
 
-.main_text_l2 {
-    font-size: 18px;
-    color: white;
-    margin: 10px 10px 10px 55px;
-}
-.main_text_l3 {
-    font-size: 18px;
-    color: white;
-    margin: 10px 10px 10px 55px;
-}
-.main_text_l4 {
-    font-size: 18px;
-    color: white;
-    margin: 10px 10px 10px 55px;
+
+.main_image {
+    flex: 0 1 300px;
+    max-width: 300px;
+    min-width: 0;
 }
 
-.main_image img{
-    display: flex;
-    flex-direction:row;      
-    flex: 1;
-    width: 90%;
-    height: 90%;
-    margin: 0px 10px 10px 10px;
-    border-radius: 10px;
+.main_image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 20px;
 }
 
 /* colour seting is pending here */
@@ -84,7 +77,7 @@
     flex-direction: row;
     justify-content: flex-start; 
     align-items: center;   
-    margin: -70px 0px 0px 450px;                
+    margin: 20px 0;
 }
 .login_button button {
     display: flex;
@@ -107,12 +100,6 @@
     backdrop-filter: blur(10px);
     margin: -90px 8px 25px 8px;
 } */
-
-.main_image img {
-    padding-top: 25px;
-    border-radius: 20px;
-}
-
 
 .text1_l1 {
     font-size: 45px;
@@ -145,8 +132,8 @@
     flex: 1;
     text-align: center;
     padding: 20px;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(35px);
     opacity: 70%;
     border-radius: 10px;
     margin: 100px 10px 25px 10px;
@@ -162,8 +149,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(35px);
 }
 
 
@@ -193,8 +180,8 @@
     justify-content: center;
     align-items: center;
     margin: 100px auto;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(35px);
     border-radius: 10px;
     gap: 20px;
 
@@ -232,8 +219,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(35px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -255,7 +242,7 @@
     font-size: 25px;
     margin: 10px 20px 10px -7px;
 }
-
+6
 
 
 /* how the feedback system work css ln238 -- ln349 */
@@ -297,8 +284,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(35px);
     display: flex;
     justify-content: center;
     align-items: center;  
@@ -307,8 +294,8 @@
     flex: 1;
     border: 2px solid #333333;
     margin: 10px 10px 10px 10px ;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(35px);
     border-radius: 20px;
 }
 .feedback_step_card_top_logo{
@@ -336,7 +323,7 @@ p.feedback_line_2 {
 }
 
 .feedback_break {
-    margin-top: 50px;
+    margin-top: 0px;
     opacity: 50%;
 }
 .feedback_bottom_line_1 {
