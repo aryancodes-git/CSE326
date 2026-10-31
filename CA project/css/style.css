@@ -1,17 +1,26 @@
 @import url(colors.css);
 
 html, body{
-    color: rgb(242, 220, 191);
+    color: rgb(255, 255, 255);
 }
 
 
 .index-body {
-    background-color: rgb(242, 220, 191);
+    background-color: rgb(253, 253, 252);
     background-image:
-        linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(5, 0, 0, 0)),
-        url("../images/0ff769dea5fe0c24a3c93f87edf05f16.gif");
+        /* linear-gradient(to bottom, rgba(0, 0, 0, 0), rgb(57, 55, 55)), */
+       
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-size: cover;
+}
+
+.index_header {
+    background-image:
+        linear-gradient(rgba(12, 18, 30, 0.28), rgba(12, 18, 30, 0.48)),
+        url("../images/new-new.png");
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
 }
 
@@ -32,6 +41,7 @@ html, body{
     justify-content: space-between;
     border-radius: 20px;
     align-items: center;
+    padding-bottom: 70px;
 }
 
 .header_nav ul li a{
