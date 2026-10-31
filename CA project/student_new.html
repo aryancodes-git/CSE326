@@ -33,7 +33,7 @@
         font-family: "Amethysta";
       }
       .content-container {
-        background-image: url("images/bg image.png");
+        background-color: var(--lpu-orange);
         display: flex;
         justify-content: center;
       }
@@ -63,10 +63,21 @@
         display: flex;
       }
       .nav-button{
-        background-color: var(--lpu-yellow);
+        background-color: white;
         margin: 0.2rem 0.1rem 0.2rem 0.1rem;
         border: none;
         font-size: 1.2rem;
+      }
+      .faculty-card{
+        display: flex;
+        flex-direction: column;
+      }
+      .faculty-name{
+        font-size: 1.2rem;
+        color: var(--lpu-teal);
+      }
+      .department, .courses{
+        font-size: 0.8rem;
       }
     </style>
   </head>
@@ -84,7 +95,7 @@
       </header>
     </div>
     <div class="content-container">
-      <main class="content">
+      <div class="content">
         <span class="content-title">Faculty Feedback</span>
         <nav class="navigation">
             <button class="nav-button">home</button>
@@ -99,7 +110,15 @@
                 <button>click here</button>
             </div>
         </div>
-      </main>
     </div>
+</div>
+<div class="faculty-card-container">
+    <div class="faculty-card">
+        <span class="faculty-name">name</span>
+        <span class="department">dept. of computer science</span>
+        <span class="courses">cse229</span>
+        <span class="description">description of the faculty. abcd efgh ijkl mnop qrst uvwx yzab</span>
+    </div>
+</div>
   </body>
 </html>
