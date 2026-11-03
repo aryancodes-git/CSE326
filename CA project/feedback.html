@@ -1,50 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Feedback</title>
+    <style>
+        .feedback-form{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
 </head>
+
 <body>
-    <div>topbar</div>
-    <main>
-        <form style="display:flex; flex-direction: column;">
-            <label for="instructor">Instructor</label>
+    <form class="feedback-form">
+        <span>
+            <label>professor name</label>
             <select>
-                <option>Dr. Meowton</option>
-                <option>Dr. Hello</option>
-                <option>Prof. Meow</option>
+                <option>professor 1</option>
+                <option>professor 2</option>
+                <option>professor 3</option>
+                <option>professor 4</option>
             </select>
-            <div class="rating-wrapper">
-        <h3>Rate Your Experience</h3>
-        
-        <!-- Standard HTML Form -->
-        <form id="rating-form" action="/submit-rating" method="POST">
-            <div class="star-rating">
-                <!-- Inputs are written from 5 to 1 to work with the row-reverse layout -->
-                <input type="radio" id="star5" name="rating" value="5" />
-                <label for="star5" title="5 stars"></label>
-
-                <input type="radio" id="star4" name="rating" value="4" />
-                <label for="star4" title="4 stars"></label>
-
-                <input type="radio" id="star3" name="rating" value="3" />
-                <label for="star3" title="3 stars"></label>
-
-                <input type="radio" id="star2" name="rating" value="2" />
-                <label for="star2" title="2 stars"></label>
-
-                <input type="radio" id="star1" name="rating" value="1" />
-                <label for="star1" title="1 star"></label>
-            </div>
-            
-            <button type="submit" style="padding: 8px 16px; cursor: pointer;">Submit Rating</button>
-        </form>
-    </div>
-            <label>Overall Rating</label>
-            <input type="range" min="0" max="10" value="5">
-            <button>submit feedback</button>
-        </form>
-    </main>
+        </span>
+        <span>
+            <label>feedback</label>
+            <textarea rows="2" cols="30"></textarea>
+        </span>
+        <span>
+            <label>rating</label>
+            <input type="range" min="0" value="2" max="20">
+        </span>
+        <span>
+            <label></label>
+        </span>
+    </form>
 </body>
+
 </html>
