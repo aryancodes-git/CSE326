@@ -229,3 +229,69 @@ body {
     overflow-wrap: anywhere;
 }
 
+.bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.left_side{
+    flex: 2 1 1;
+}
+
+.right_side{
+    flex: 1 0 0;
+}
+
+.left_side_line_1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_side_line_2 {
+    font-size: 25px;
+}
+
+.left_side_line_3 {
+    font-size: 12px;
+}
+
+.left_side_line_4 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+.left_side_line_4_a {
+    
+}
+
+/* .left_side_form_option {
+    display: flex;
+    flex-direction: column;
+} */
+
+.left_side_line_5 {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.left_side_line_6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.left_side_line_6_text {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_side_line_7 {
+    display: flex;
+    flex-direction: row;
+}
+
+.left_side_line_8 {
+    display: flex;
+    flex-direction: row;
+}

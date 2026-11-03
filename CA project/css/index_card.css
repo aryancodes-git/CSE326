@@ -77,7 +77,7 @@
     flex-direction: row;
     justify-content: flex-start; 
     align-items: center;   
-    margin: 20px 0;
+    /* margin: 20px 0; */
 }
 .login_button button {
     display: flex;
