@@ -232,66 +232,430 @@ body {
 .bottom {
     display: flex;
     flex-direction: row;
-    gap: 10px;
+    align-items:baseline;
+    gap: 20px;
+    margin: 30px;
 }
 
-.left_side{
-    flex: 2 1 1;
+/* Official Query Submission css  starts here*/
+
+.left_side {
+    flex: 3;
+    min-width: 0;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: rgba(228, 222, 222, 0.09);
+    overflow: hidden;
 }
 
-.right_side{
-    flex: 1 0 0;
-}
+/* submit communication container  */
 
 .left_side_line_1 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
 }
+
+/* logo --> SUBMIT COMMUNICATION  */
+
+.left_side_line_1_logo .material-symbols-outlined{
+    font-size: 35px;
+    display: flex;
+    color: burlywood;
+}
+
+/* text --> SUBMIT COMMUNICATION */
+.left_side_line_1_text {
+    font-size: 23px;
+    font-weight: 600;
+    color: burlywood;
+}
+
+/* text --> Official Query Submission */
 
 .left_side_line_2 {
-    font-size: 25px;
+    font-size: 38px;
+    font-weight: 600;
+    margin-bottom: 0px;
 }
 
+/* text --> Submissions are logged into the central ticket registry and prioritized by term window deadlines */
+
 .left_side_line_3 {
-    font-size: 12px;
+    font-size: 18px;
+    line-height: 19px;
+    padding-left: 3px;
+    margin-bottom: 35px;
 }
+
+/* line -->  Affiliation Category */
 
 .left_side_line_4 {
     display: flex;
     flex-direction: row;
-    gap: 4px;
-}
-.left_side_line_4_a {
-    
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
 }
 
-/* .left_side_form_option {
-    display: flex;
-    flex-direction: column;
-} */
+.left_side_line_4_a,.left_side_line_4_b {
+    flex: 1;
+    min-width: 0;
+}
+
+/* all label title css here [line_4, line_5, line_6] */
+
+.labels_title {
+    font-size: 22px;
+}
+
+/* all label title side small text [like optional] css here [line_4, line_6] */
+.labels_title_side_small_text {
+    font-size: 15px;
+}
+
+/* line --> Official Campus / Contact Email */
 
 .left_side_line_5 {
     display: flex;
     flex-direction: row;
-    gap: 4px;
+    align-items: flex-end;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* two parts like --> |option 1 | option 2| */
+.left_side_line_5_a, .left_side_line_5_b {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* label title container */
+.left_side_form_4_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+
+/* label title container */
+.left_side_form_5_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+/* all option --> css  in [line_4, line_5] */
+
+.left_side_form_option {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+}
+
+
+
+.left_side_form_option label {
+    font-size: 13px;
+}
+
+
+
+.left_side_form_input input, .left_side_form_option select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 13px;
 }
 
 .left_side_line_6 {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
 }
 
 .left_side_line_6_text {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.left_side_line_6_text_2 {
+    font-size: 11px;
+    color: burlywood;
+}
+
+.left_side_line_6_text_area {
+    width: 100%;
+}
+
+.left_side_line_6_text_area textarea {
+    width: 100%;
+    height: 90px;
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 7px;
+    font-size: 13px;
 }
 
 .left_side_line_7 {
     display: flex;
     flex-direction: row;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.left_side_line_7_check_box input {
+    width: auto;
+}
+
+.left_side_line_7_check_text {
+    font-size: 17px;
+    line-height: 17px;
 }
 
 .left_side_line_8 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.left_side_line_8_logo {
+    display: flex;
+    color: burlywood;
+}
+
+.left_side_line_8_text_container {
+    flex: 1;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+.left_side_line_8_text_line_1 {
+    font-size: 18px;
+}
+
+.left_side_line_8_button button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 7px;
+    background-color: burlywood;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.right_side {
+    flex: 2;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.right_side_1 {
+    padding: 20px;
+    border-radius: 13px;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+}
+
+.right_side_1_line_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.right_side_1_line_1_A {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 8px;
+}
+
+.right_side_1_line_1_A_a {
+    color: burlywood;
+    display: flex;
+}
+
+.right_side_1_line_1_A_a .material-symbols-outlined {
+    font-size: 22px;
+}
+
+.right_side_1_line_1_A_b {
+    font-size: 15px;
+    font-weight: 600;
+    color: burlywood;
+}
+
+.right_side_1_line_1_B {
+    font-size: 15px;
+    color: burlywood;
+}
+
+.right_side_1_line_2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 1px;
+}
+
+.right_side_1_line_3 {
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.right_side_2 {
+    padding: 20px;
+    border-radius: 13px;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+}
+
+.right_side_2_line_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.right_side_2_line_1_A {
+    display: flex;
+    color: burlywood;
+}
+
+.right_side_2_line_1_A .material-symbols-outlined {
+    font-size: 25px;
+}
+
+.right_side_2_line_1_B {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.right_side_2_line_2 > div {
+    margin-bottom: 10px;
+}
+
+.frequent_question {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+}
+
+.frequent_question_summary {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.question_content {
+    font-size: 15px;
+    line-height: 22px;
+    padding-top: 10px;
+}
+
+.right_side_3 {
+    padding: 20px;
+    border-radius: 13px;
+    background-color: rgba(228, 222, 222, 0.126);
+    backdrop-filter: blur(5px);
+}
+
+.right_side_3_line_1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.right_side_3_line_1_A {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.right_side_3_line_1_A_a {
+    display: flex;
+    color: burlywood;
+}
+
+.right_side_3_line_1_A_a .material-symbols-outlined {
+    font-size: 29px;
+}
+
+.right_side_3_line_1_A_b {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.right_side_3_line_1_B {
+    font-size: 15px;
+    color: burlywood;
+}
+
+.right_side_3_line_2 {
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.right_side_3_line_2_A {
+    font-size: 21px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.right_side_3_line_2_B {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 12px;
+}
+
+.right_side_3_line_2_C {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: burlywood;
+}
+
+.right_side_3_line_2_C_a {
+    display: flex;
+}
+
+.right_side_3_line_3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin-top: 18px;
+    font-size: 15px;
+}
+
+.right_side_3_line_3_B {
+    color: burlywood;
 }

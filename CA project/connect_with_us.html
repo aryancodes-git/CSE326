@@ -217,7 +217,9 @@
             <div class="left_side_line_4">
                 <div class="left_side_line_4_a">
                     <div class="left_side_form_option">
-                        <label for="affiliation">Affiliation Category</label>
+                        <label for="affiliation">
+                            <div class="labels_title">Affiliation Category</div>
+                        </label>
                         <select id="affiliation" name="affiliation">
                             <option value="student" selected>Student</option>
                             <option value="Faculty" selected>Faculty</option>
@@ -226,28 +228,38 @@
                     </div>
                 </div>
                 <div class="left_side_line_4_b">
-                    <div class="left_side_form_title">
-                        Full Name / Registration ID &Tab; <span>Optional</span>
+                    <div class="left_side_form_4_title">
+                        <div class="labels_title">
+                            Full Name / Registration ID
+                        </div>
+                        <div class="labels_title_side_small_text">
+                            Optional
+                        </div>
                     </div>
-                    <div class="left_side_form_text_field">
-                        
+                    <div class="left_side_form_input">
+
                         <input type="text" placeholder="e.g., 12104928 (or Anonymous)">
                     </div>
                 </div>
             </div>
-            <div class="left_side_line_5_a">
-                <div class="left_side_form_title">
-                    Official Campus / Contact Email
-                </div>
-                <div class="left_side_form_text_field">
-                    <input type="text" placeholder="student@lpu.in">
-
-                </div>
-            </div>
             <div class="left_side_line_5">
+                <div class="left_side_line_5_a">
+                    <div class="left_side_form_5_title">
+                        <div class="labels_title">
+                            Official Campus / Contact Email
+                        </div>
+                    </div>
+                    <div class="left_side_form_input">
+                        <input type="text" placeholder="student@lpu.in">
+                    </div>
+                </div>
                 <div class="left_side_line_5_b">
                     <div class="left_side_form_option">
-                        <label for="Inquiry">Inquiry Category</label>
+                        <label for="Inquiry">
+                            <div class="labels_title">
+                                Inquiry Category
+                            </div>
+                        </label>
                         <select id="Inquiry" name="Inquiry">
                             <option value="student" selected>Technical / SSO Login Issue</option>
                             <option value="Faculty" selected>Faculty</option>
@@ -258,20 +270,21 @@
             </div>
             <div class="left_side_line_6">
                 <div class="left_side_line_6_text">
-                    <div class="left_side_line_6_text_1">
+                    <div class="labels_title">
                         Message / Inquiry Details
                     </div>
-                    <div class="left_side_line_6_text_2">
+                    <div class="labels_title_side_small_text">
                         Clear and concise summary
                     </div>
                 </div>
                 <div class="left_side_line_6_text_area">
-                    <textarea name="Message" id="Message" placeholder="Detail your concern, course codes affected, or technical context ..." ></textarea>
+                    <textarea name="Message" id="Message"
+                        placeholder="Detail your concern, course codes affected, or technical context ..."></textarea>
                 </div>
             </div>
             <div class="left_side_line_7">
                 <div class="left_side_line_7_check_box">
-                    <input type="checkbox">
+                    <input type="checkbox" required>
                 </div>
                 <div class="left_side_line_7_check_text">
                     Request a confidentlal callback from an elected Student Senate representative alongside Campus
@@ -279,10 +292,12 @@
                 </div>
             </div>
             <div class="left_side_line_8">
-                <div class="left_side_line_8_text">
-                    <div class="left_side_line_8_text_logo">
+                <div class="left_side_line_8_logo_container">
+                    <div class="left_side_line_8_logo">
                         <span class="material-symbols-outlined">encrypted</span>
                     </div>
+                </div>
+                <div class="left_side_line_8_text_container">
                     <div class="left_side_line_8_text_line_1">
                         256-Bit Encrypted Ticket
                     </div>
@@ -305,7 +320,7 @@
                             </span>
                         </div>
                         <div class="right_side_1_line_1_A_b">
-                            SERVICE GUARANTEE
+                            SERVICE <br> GUARANTEE
                         </div>
                     </div>
                     <div class="right_side_1_line_1_B">
@@ -317,7 +332,7 @@
                 </div>
                 <div class="right_side_1_line_3">
                     All submissions recelved through officlal channels are timestamped and
-                    assigned to designated IQAC officers.
+                    assigned ,<br> to designated IQAC officers.
                 </div>
             </div>
             <div class="right_side_2">
