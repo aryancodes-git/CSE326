@@ -117,6 +117,7 @@ body {
 }
 
 
+/* introduction section container */
 .intro {
     display: flex;
     flex-direction: column;
@@ -130,12 +131,14 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* main introduction heading */
 .line_1 {
     font-size: 43px;
     font-weight: 600;
     margin: 19px 60px 10px 60px;
 }
 
+/* introduction description text */
 .line_2 {
     font-size: 17px;
     line-height: 30px;
@@ -143,11 +146,13 @@ body {
     padding: 0px 100px 0px 0px;
 }
 
+/* horizontal divider between introduction and contact cards */
 .page_break {
     margin: 100px 22px;
     opacity: 70%;
 }
 
+/* three contact cards arranged in one row */
 .contact_card {
     display: flex;
     flex-direction: row;
@@ -157,6 +162,7 @@ body {
     margin: 0px 22px;
 }
 
+/* individual contact card layout and background */
 .contact_card_container {
     display: flex;
     flex-direction: column;
@@ -172,6 +178,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* contact card icon and category heading row */
 .contact_line_1 {
     display: flex;
     flex-direction: row;
@@ -182,6 +189,7 @@ body {
     font-weight: 600;
 }
 
+/* icon background and alignment in contact cards */
 .contact_line_1_A {
     display: flex;
     align-items: center;
@@ -193,24 +201,29 @@ body {
     color:burlywood
 }
 
+/* contact card icon size */
 .contact_line_1_A .material-symbols-outlined {
     font-size: 25px;
 }
 
+/* contact card category text */
 .contact_line_1_B {
     font-size: 18px;
 }
 
+/* contact card main title */
 .contact_line_2 {
     font-size: 17px;
     font-weight: 600;
 }
 
+/* contact card description */
 .contact_line_3 {
     font-size: 15px;
     line-height: 25px;
 }
 
+/* phone, email, address and timing rows */
 .contact_line_4,.contact_line_5,.contact_line_6 {
     display: flex;
     flex-direction: row;
@@ -220,15 +233,18 @@ body {
     line-height: 22px;
 }
 
+/* icons for contact details */
 .contact_line_4_A,.contact_line_5_A,.contact_line_6_A {
     display: flex;
     color:burlywood;
 }
 
+/* contact detail text and long email wrapping */
 .contact_line_4_B,.contact_line_5_B,.contact_line_6_B { 
     overflow-wrap: anywhere;
 }
 
+/* bottom section containing the query form and information cards */
 .bottom {
     display: flex;
     flex-direction: row;
@@ -300,6 +316,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* two parts like --> | Affiliation Category | Full Name / Registration ID | */
 .left_side_line_4_a,.left_side_line_4_b {
     flex: 1;
     min-width: 0;
@@ -363,12 +380,14 @@ body {
 
 
 
+/* labels above select options */
 .left_side_form_option label {
     font-size: 13px;
 }
 
 
 
+/* text input and select option fields */
 .left_side_form_input input, .left_side_form_option select {
     width: 100%;
     padding: 10px;
@@ -377,6 +396,7 @@ body {
     font-size: 13px;
 }
 
+/* line --> Message / Inquiry Details */
 .left_side_line_6 {
     display: flex;
     flex-direction: column;
@@ -384,6 +404,7 @@ body {
     margin-bottom: 20px;
 }
 
+/* message title and short instruction text */
 .left_side_line_6_text {
     display: flex;
     flex-direction: row;
@@ -391,15 +412,18 @@ body {
     font-size: 13px;
 }
 
+/* small text --> Clear and concise summary */
 .left_side_line_6_text_2 {
     font-size: 11px;
     color: burlywood;
 }
 
+/* message text area container */
 .left_side_line_6_text_area {
     width: 100%;
 }
 
+/* message input box */
 .left_side_line_6_text_area textarea {
     width: 100%;
     height: 90px;
@@ -409,6 +433,7 @@ body {
     font-size: 13px;
 }
 
+/* line --> callback request checkbox and its description */
 .left_side_line_7 {
     display: flex;
     flex-direction: row;
@@ -418,15 +443,18 @@ body {
     font-size: 20px;
 }
 
+/* checkbox size */
 .left_side_line_7_check_box input {
     width: auto;
 }
 
+/* text beside the callback checkbox */
 .left_side_line_7_check_text {
     font-size: 17px;
     line-height: 17px;
 }
 
+/* line --> encrypted ticket information and send message button */
 .left_side_line_8 {
     display: flex;
     flex-direction: row;
@@ -434,21 +462,25 @@ body {
     gap: 10px;
 }
 
+/* encrypted ticket logo */
 .left_side_line_8_logo {
     display: flex;
     color: burlywood;
 }
 
+/* encrypted ticket text container */
 .left_side_line_8_text_container {
     flex: 1;
     font-weight: 600;
     line-height: 17px;
 }
 
+/* text --> 256-Bit Encrypted Ticket */
 .left_side_line_8_text_line_1 {
     font-size: 18px;
 }
 
+/* Send Message button and send icon */
 .left_side_line_8_button button {
     display: flex;
     flex-direction: row;
@@ -462,6 +494,7 @@ body {
     font-weight: 600;
 }
 
+/* right side container holding service, FAQ and campus cards */
 .right_side {
     flex: 2;
     min-width: 0;
@@ -470,6 +503,7 @@ body {
     gap: 20px;
 }
 
+/* service guarantee card */
 .right_side_1 {
     padding: 20px;
     border-radius: 13px;
@@ -477,6 +511,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* service guarantee heading and SLA policy row */
 .right_side_1_line_1 {
     display: flex;
     flex-direction: row;
@@ -485,6 +520,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* service guarantee icon and title container */
 .right_side_1_line_1_A {
     display: flex;
     flex-direction: row;
@@ -493,37 +529,44 @@ body {
     padding-bottom: 8px;
 }
 
+/* service guarantee icon */
 .right_side_1_line_1_A_a {
     color: burlywood;
     display: flex;
 }
 
+/* service guarantee icon size */
 .right_side_1_line_1_A_a .material-symbols-outlined {
     font-size: 22px;
 }
 
+/* text --> SERVICE GUARANTEE */
 .right_side_1_line_1_A_b {
     font-size: 15px;
     font-weight: 600;
     color: burlywood;
 }
 
+/* text --> SLA Policy 2025 */
 .right_side_1_line_1_B {
     font-size: 15px;
     color: burlywood;
 }
 
+/* text --> Typical Resolution: 24-48 Working Hours */
 .right_side_1_line_2 {
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 1px;
 }
 
+/* service guarantee description */
 .right_side_1_line_3 {
     font-size: 14px;
     line-height: 23px;
 }
 
+/* frequently clarified points card */
 .right_side_2 {
     padding: 20px;
     border-radius: 13px;
@@ -531,6 +574,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* FAQ icon and heading row */
 .right_side_2_line_1 {
     display: flex;
     flex-direction: row;
@@ -539,24 +583,29 @@ body {
     margin-bottom: 15px;
 }
 
+/* FAQ help icon */
 .right_side_2_line_1_A {
     display: flex;
     color: burlywood;
 }
 
+/* FAQ help icon size */
 .right_side_2_line_1_A .material-symbols-outlined {
     font-size: 25px;
 }
 
+/* text --> Frequently Clarified Points */
 .right_side_2_line_1_B {
     font-size: 22px;
     font-weight: 600;
 }
 
+/* spacing between FAQ items */
 .right_side_2_line_2 > div {
     margin-bottom: 10px;
 }
 
+/* individual expandable FAQ question container */
 .frequent_question {
     padding: 15px;
     border-radius: 8px;
@@ -564,17 +613,20 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* FAQ question text */
 .frequent_question_summary {
     font-size: 16px;
     font-weight: 600;
 }
 
+/* answer text shown when an FAQ is expanded */
 .question_content {
     font-size: 15px;
     line-height: 22px;
     padding-top: 10px;
 }
 
+/* campus secretariat and address card */
 .right_side_3 {
     padding: 20px;
     border-radius: 13px;
@@ -582,6 +634,7 @@ body {
     backdrop-filter: blur(5px);
 }
 
+/* campus heading and location label row */
 .right_side_3_line_1 {
     display: flex;
     flex-direction: row;
@@ -590,6 +643,7 @@ body {
     margin-bottom: 15px;
 }
 
+/* location icon and Campus Secretariat title container */
 .right_side_3_line_1_A {
     display: flex;
     flex-direction: row;
@@ -597,42 +651,50 @@ body {
     gap: 10px;
 }
 
+/* campus location icon */
 .right_side_3_line_1_A_a {
     display: flex;
     color: burlywood;
 }
 
+/* campus location icon size */
 .right_side_3_line_1_A_a .material-symbols-outlined {
     font-size: 29px;
 }
 
+/* text --> Campus Secretariat */
 .right_side_3_line_1_A_b {
     font-size: 22px;
     font-weight: 600;
 }
 
+/* text --> Central Campus */
 .right_side_3_line_1_B {
     font-size: 15px;
     color: burlywood;
 }
 
+/* campus address and walk-in information container */
 .right_side_3_line_2 {
     padding: 15px;
     border-radius: 8px;
 }
 
+/* text --> Block 32, Executive Suite 104 */
 .right_side_3_line_2_A {
     font-size: 21px;
     font-weight: 600;
     margin-bottom: 8px;
 }
 
+/* full Lovely Professional University address */
 .right_side_3_line_2_B {
     font-size: 16px;
     line-height: 23px;
     margin-bottom: 12px;
 }
 
+/* walk-in hours row */
 .right_side_3_line_2_C {
     display: flex;
     flex-direction: row;
@@ -642,10 +704,12 @@ body {
     color: burlywood;
 }
 
+/* walk-in schedule icon */
 .right_side_3_line_2_C_a {
     display: flex;
 }
 
+/* emergency escalation label and email row */
 .right_side_3_line_3 {
     display: flex;
     flex-direction: row;
@@ -656,6 +720,7 @@ body {
     font-size: 15px;
 }
 
+/* emergency escalation email address */
 .right_side_3_line_3_B {
     color: burlywood;
 }
