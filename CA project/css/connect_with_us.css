@@ -251,6 +251,7 @@ body {
     align-items:baseline;
     gap: 20px;
     margin: 30px;
+    align-items:self-start;
 }
 
 /* Official Query Submission css  starts here*/
