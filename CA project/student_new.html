@@ -1,167 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Student Page</title>
-    <link rel="stylesheet" href="css/global.css" />
-    <style>
-      .topbar-container {
-        padding: 0.5rem;
-        display: flex;
-        justify-content: center;
-      }
-      .topbar {
-        width: 80%;
-      }
-      .logo {
-        display: flex;
-        align-items: center;
-        gap: 0.8em;
-      }
-      .logo-image {
-        width: 5em;
-        height: auto;
-      }
-      .logo-title {
-        display: flex;
-        flex-direction: column;
-      }
-      .logo-title-text {
-        font-size: 1.2em;
-        font-weight: 800;
-        font-family: "Amethysta";
-      }
-      .content-container {
-        background-color: var(--lpu-orange);
-        display: flex;
-        justify-content: center;
-      }
-      .content {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-      }
-      .content-title {
-        font-size: 2em;
-        font-weight: 800;
-        font-family: "Amethysta";
-      }
-      .content-image-board-container {
-        position: relative;
-        display: flex;
-        width: 100%;
-      }
-      .content-image-board {
-        width: 60%;
-        height: auto;
-      }
-      .content-image-overlay {
-        background-color: white;
-        flex-grow: 1;
-      }
-      .navigation {
-        display: flex;
-        justify-content: end;
-      }
-      .nav-button {
-        background-color: white;
-        margin: 0.2rem 0.1rem 0.2rem 0.1rem;
-        border: none;
-        font-size: 1.2rem;
-      }
-      .nav-button:hover{
-        background-color: darkgray;
-      }
-      .main-container{
-        display: flex;
-        justify-content: center;
-      }
-      .faculty-card-container{
-        width: 80%;
-      }
-      .faculty-card{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
-      .faculty-card-details {
-        display: flex;
-        flex-direction: column;
-      }
-      .faculty-name {
-        font-size: 1.2rem;
-        color: var(--lpu-teal);
-      }
-      .department,
-      .courses {
-        font-size: 0.8rem;
-      }
-      .rating {
-        color: var(--lpu-yellow);
-        font-weight: 800;
-      }
-      .faculty-card-button {
-        width: fit-content;
-      }
-      .faculty-card-image{
-        width: 72px;
-        height: auto;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="topbar-container">
-      <header class="topbar">
-        <div class="logo">
-          <img class="logo-image" src="images/icons/lpu logo.png" />
-          <div class="logo-title">
-            <span class="logo-title-text">Lovely</span>
-            <span class="logo-title-text">Professional</span>
-            <span class="logo-title-text">University</span>
-          </div>
-        </div>
-      </header>
-    </div>
-    <div class="content-container">
-      <div class="content">
-        <span class="content-title">Faculty Feedback</span>
-        <nav class="navigation">
-          <button class="nav-button">home</button>
-          <button class="nav-button">dashboard</button>
-          <button class="nav-button">my courses</button>
-          <button class="nav-button">announements</button>
-        </nav>
-        <div class="content-image-board-container">
-          <img
-            class="content-image-board"
-            src="images/main_teacher_img_1.png"
-          />
-          <div class="content-image-overlay">
-            <span class="content-image-overlay-text">top faculties</span>
-          </div>
-        </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Page</title>
+  <link rel="stylesheet" href="../styles/faculty.css">
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <img class="topbar-left__logo" src="../assets/icons/logo.png">
+      <div class="topbar-left__title">
+        <span>Lovely</span>
+        <span>Professional</span>
+        <span>University</span>
       </div>
     </div>
-    <main class="main-container">
-        <div class="faculty-card-container">
-      <div class="faculty-card">
-        <div class="faculty-card-details">
-          <span class="faculty-name">name</span>
-          <span class="department">dept. of computer science</span>
-          <span class="courses">cse229</span>
-          <span class="rating">rating: null/10</span>
-          <span class="description"
-            >description of the faculty. abcd efgh ijkl mnop qrst uvwx
-            yzab</span
-          >
-          <button class="faculty-card-button">rate this professor</button>
-        </div>
-        <div class="faculty-card-image">
-            <img class="faculty-card-image" src="images/teachers_icons/teacher_one.jpg">
-        </div>
-      </div>
+    <div class="topbar-center">
+      <button class="topbar-center__btn">home</button>
+      <button class="topbar-center__btn">announcements</button>
     </div>
-    </main>
-  </body>
+    <div class="topbar-right">
+      <button class="topbar-right__btn">profile</button>
+    </div>
+  </header>
+  <section id="facultyCardContainer" class="faculty-card__container">
+    <!--all faculty cards will appear here, to edit cards, modify scripts/faculty.js-->
+  </section>
+  <section class="faculty-rating-menu__container">
+    <div id="facultyRatingMenu" class="faculty-rating-menu hidden">
+      Work In Progress!
+      <button id="closeFacultyRatingMenu" class="faculty-rating__btn--close">close</button>
+    </div>
+  </section>
+  <script src="../scripts/faculty.js"></script>
+</body>
+
 </html>
