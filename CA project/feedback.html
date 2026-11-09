@@ -10,32 +10,22 @@
             display: flex;
             flex-direction: column;
         }
+        .faculty-list{
+        }
+        .faculty-card{
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            margin: 1rem;
+            padding: 1rem;
+        }
     </style>
 </head>
 
 <body>
-    <form class="feedback-form">
-        <span>
-            <label>professor name</label>
-            <select>
-                <option>professor 1</option>
-                <option>professor 2</option>
-                <option>professor 3</option>
-                <option>professor 4</option>
-            </select>
-        </span>
-        <span>
-            <label>feedback</label>
-            <textarea rows="2" cols="30"></textarea>
-        </span>
-        <span>
-            <label>rating</label>
-            <input type="range" min="0" value="2" max="20">
-        </span>
-        <span>
-            <label></label>
-        </span>
-    </form>
-</body>
+    <div id="facultyContainer" class="faculty-list">
 
+    </div>
+    <script src="./js/feedback.js"></script>
+</body>
 </html>
