@@ -1,2 +1,3 @@
-# CSE326
-About my web dev journey.
+|| CSE 326 CA||
+
+This is a faculty feedback portal for colleges/school website.
