@@ -36,37 +36,38 @@ body {
 }
 
 .header_content {
-    animation-name: homeAnimation;
-    animation-duration: 5s;
     display: flex;
     justify-content: space-between;
-    border-radius: 20px;
     align-items: center;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
-    
+    background-color: #7c3c2e;
+    color: #FFFFFF;
 }
 
 .header_nav ul li a{
     display: block;
-    color: white;
+    color: #F3EBE6;
+    margin: 0 1rem;
+    font-weight: 500;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .header-right-button{
-    background-color: rgb(216, 162, 69);
-    border: none;
-    font-size: 1.2rem;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-    font-weight: 600;
-    color: var(--paper);
+    animation-name: homeAnimation;
+    animation-duration: 3s;
+    background-color: #6E3628;
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 .header-right-button:hover{
-    background-color: rgb(137, 101, 39);
+    background-color: #e0dfde;
+    color: black;
+    border: 1px groove black;
 }
 
 .logo_header img{
@@ -124,33 +125,53 @@ body {
     justify-content: space-around;
     height: auto;
     width: auto;
-    margin: 30px 20px;
-    padding: 50px 0px;
-    border-radius: 20px;
-    background-color: rgba(228, 222, 222, 0.126);
-    backdrop-filter: blur(5px);
+    /* margin-top: 50px; */
+    padding: 100px 0px;
+    background-color: rgba(254, 253, 253, 0.991);
 }
 
 /* main introduction heading */
 .line_1 {
-    font-size: 43px;
-    font-weight: 600;
-    margin: 19px 60px 10px 60px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: 30px;
+    color: #7c3c2e;
+    margin-bottom: 30px;
 }
 
 /* introduction description text */
 .line_2 {
-    font-size: 17px;
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 20px;
     line-height: 30px;
-    margin: 10px 100px;
-    padding: 0px 100px 0px 0px;
+    text-align: center;
+    font-weight: 700px;
+    margin-left: 40px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #7c3c2e;
+    margin-right: 30px;
+}
+
+.line_3 {
+    font-family: system-ui, -apple-system, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-weight: 700px;
+    margin-left: 40px;
+    margin-top: 20px;
+    color: #7c3c2e;
+    margin-right: 30px;
 }
 
 /* horizontal divider between introduction and contact cards */
-.page_break {
+/* .page_break {
     margin: 100px 22px;
     opacity: 70%;
-}
+} */
 
 /* three contact cards arranged in one row */
 .contact_card {
