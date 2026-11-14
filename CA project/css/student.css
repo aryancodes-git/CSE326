@@ -1,88 +1,137 @@
 @import url("colors.css");
 
-.faculty-card__name {
-  font-weight: 800;
-  color: var(--primary);
-  font-size: 1.2rem;
+.faculty-card__name{
+    font-weight: 800;
+    color: var(--primary);
+    font-size: 1.2rem;
 }
 
-.faculty-card__department,
-.faculty-card__courses {
-  font-weight: 600;
-  color: var(--secondary);
-  font-size: 0.8rem;
+.faculty-card__department, .faculty-card__courses{
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.8rem;
 }
 
-.faculty-card__overall-rating,
-.faculty-card__overall-course-difficulty {
-  font-weight: 600;
-  color: var(--accent-text);
-  font-size: 1rem;
+.faculty-card__overall-rating, .faculty-card__overall-course-difficulty{
+    font-weight: 600;
+    color: var(--accent-text);
+    font-size: 1rem;
 }
 
-.faculty-card__container {
-  padding: 1rem;
+.faculty-rating-menu__form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+    margin: 2rem;
+    max-width: 600px;
+    background-color: var(--surface);
 }
 
-.faculty-card {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--surface);
-  padding: 1rem;
-  margin: 0.5rem;
+.faculty-rating-menu__form label{
+    font-weight: 600;
+    color: var(--secondary);
+    font-size: 0.85rem;
+}
+
+.faculty-rating-menu__faculty-selector,
+.faculty-rating-menu__course-selector,
+.faculty-rating-menu__comment-input{
+    padding: 0.5rem;
+    border: 1px solid var(--secondary);
+    background-color: var(--surface);
+    color: var(--secondary);
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+.faculty-rating-menu__faculty-selector:focus,
+.faculty-rating-menu__course-selector:focus,
+.faculty-rating-menu__comment-input:focus{
+    outline-color: var(--primary);
+}
+
+.faculty-rating-menu__faculty-selector:disabled{
+    background-color: var(--background);
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.faculty-rating-menu__comment-input{
+    resize: vertical;
+    min-height: 4rem;
+}
+
+.faculty-rating-menu__rating-input,
+.faculty-rating-menu__difficulty-rating-input{
+    accent-color: var(--primary);
+}
+
+.faculty-card__container{
+    display: flex;
+    padding: 1rem;
+}
+
+.faculty-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface);
+    padding: 1rem;
+    margin: 0.5rem;
+    flex-grow: 1;
 }
 
 
-.topbar {
-  display: flex;
-  padding: 1rem;
-  background-color: var(--primary);
-  justify-content: space-between;
+.topbar{
+    display: flex;
+    padding: 1rem;
+    background-color: var(--primary);
+    justify-content: space-between;
 }
 
-.topbar-left,
-.topbar-center,
-.topbar-right {
-  display: flex;
-  gap: 1rem;
-  align-items: center;
+.topbar-left, .topbar-center, .topbar-right{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
-.faculty-rating__btn--open,
-.faculty-rating__btn--close {
-  background-color: var(--primary);
-  color: var(--surface);
-  border: none;
-  width: fit-content;
-  padding: 0.5rem;
-  font-size: 0.8rem;
+.faculty-rating__btn--open, .faculty-rating__btn--close, .faculty-rating-menu__submit-btn{
+    background-color: var(--primary);
+    color: var(--surface);
+    border: none;
+    width: fit-content;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    cursor: pointer;
 }
 
-.topbar-left__logo {
-  width: 4rem;
-  height: 4rem;
+.faculty-rating__btn--close{
+    margin-left: 2rem;
 }
 
-.topbar-left__title {
-  display: flex;
-  flex-direction: column;
-  color: var(--surface)
+.topbar-left__logo{
+    width: 4rem;
+    height: 4rem;
 }
 
-.topbar-center__btn,
-.topbar-right__btn {
-  background-color: transparent;
-  border: none;
-  color: var(--surface);
-  font-size: 1rem;
+.topbar-left__title{
+    display: flex;
+    flex-direction: column;
+    color: var(--surface)
 }
 
-.topbar-center__btn:hover,
-.topbar-right__btn:hover {
-  cursor: pointer;
-  text-decoration: underline;
+.topbar-center__btn, .topbar-right__btn{
+    background-color: transparent;
+    border: none;
+    color: var(--surface);
+    font-size: 1rem;
 }
 
-.hidden {
-  display: none !important;
+.topbar-center__btn:hover, .topbar-right__btn:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.hidden{
+    display: none !important;
 }

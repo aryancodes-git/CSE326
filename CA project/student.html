@@ -1,41 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Faculty Page</title>
-  <link rel="stylesheet" href="./css/student.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Page</title>
+    <link rel="stylesheet" href="./css/student.css" />
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="topbar-left">
-      <img class="topbar-left__logo" src="./images/icons/lpu logo.png">
-      <div class="topbar-left__title">
-        <span>Lovely</span>
-        <span>Professional</span>
-        <span>University</span>
-      </div>
-    </div>
-    <div class="topbar-center">
-      <button class="topbar-center__btn">home</button>
-      <button class="topbar-center__btn">announcements</button>
-    </div>
-    <div class="topbar-right">
-      <button class="topbar-right__btn">profile</button>
-    </div>
-  </header>
-  <section id="facultyCardContainer" class="faculty-card__container">
-    <!--all faculty cards will appear here, to edit cards, modify scripts/faculty.js-->
-  </section>
-  <section class="faculty-rating-menu__container">
-    <div id="facultyRatingMenu" class="faculty-rating-menu hidden">
-      Work In Progress!
-      <button id="closeFacultyRatingMenu" class="faculty-rating__btn--close">close</button>
-    </div>
-  </section>
-  <script src="./js/student.js"></script>
+    <header class="topbar">
+        <div class="topbar-left">
+            <img class="topbar-left__logo" src="./images/icons/lpu logo.png" />
+            <div class="topbar-left__title">
+                <span>Lovely</span>
+                <span>Professional</span>
+                <span>University</span>
+            </div>
+        </div>
+        <div class="topbar-center">
+            <button id="topbarCenterButtonHome" class="topbar-center__btn">home</button>
+            <button class="topbar-center__btn">announcements</button>
+        </div>
+        <div class="topbar-right">
+            <button class="topbar-right__btn">profile</button>
+        </div>
+    </header>
+    <section id="facultyCardContainer" class="faculty-card__container">
+        <!--all faculty cards will appear here, to edit cards, modify scripts/faculty.js-->
+    </section>
+    <section class="faculty-rating-menu__container">
+        <div id="facultyRatingMenu" class="faculty-rating-menu hidden">
+            <form class="faculty-rating-menu__form">
+                <label for="ratingMenuFacultySelector">Select a faculty:</label>
+                <select id="ratingMenuFacultySelector" class="faculty-rating-menu__faculty-selector" disabled></select>
+                <label for="ratingMenuCourseSelector">Select a course:</label>
+                <select id="ratingMenuCourseSelector" class="faculty-rating-menu__course-selector"></select>
+                <label for="ratingMenuRatingInput">Enter a rating (1-10):</label>
+                <input type="range" id="ratingMenuRatingInput" class="faculty-rating-menu__rating-input" min="1"
+                    max="10" />
+                <label for="ratingMenuDifficultyRatingInput">Enter course difficulty (1-10):</label>
+                <input type="range" id="ratingMenuDifficultyRatingInput" class="faculty-rating-menu__difficulty-rating-input" min="1"
+                    max="10" />
+                <label for="ratingMenuCommentInput">Enter a comment:</label>
+                <textarea id="ratingMenuCommentInput" class="faculty-rating-menu__comment-input"></textarea>
+                <button id="submitFacultyRating" class="faculty-rating-menu__submit-btn">
+                    Submit Rating
+                </button>
+            </form>
+            <button id="closeFacultyRatingMenu" class="faculty-rating__btn--close">
+                close
+            </button>
+        </div>
+    </section>
+    <script src="./js/student.js"></script>
 </body>
 
 </html>

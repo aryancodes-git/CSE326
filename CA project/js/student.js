@@ -25,14 +25,54 @@ class Faculty {
         `;
     return cardElement;
   }
+
+  renderFacultySelector() {
+    const option = document.createElement("option");
+    option.value = this.name;
+    option.innerText = this.name;
+    return option;
+  }
 }
 
+let selectedFaculty = null;
+
 function openFacultyRatingMenu() {
-  facultyRatingMenu.classList.remove("hidden")
+  facultyRatingMenu.classList.remove("hidden");
+  selectedFaculty = this.parentElement.querySelector(
+    ".faculty-card__name",
+  ).textContent;
+  renderMenuCourses(selectedFaculty);
 }
 
 const facultyCardContainer = document.getElementById("facultyCardContainer");
-const facultyRatingMenu = document.getElementById("facultyRatingMenu")
+
+// faculty rating form
+const facultyRatingMenu = document.getElementById("facultyRatingMenu");
+const ratingMenuFacultySelector = document.getElementById(
+  "ratingMenuFacultySelector",
+);
+const ratingMenuCourseSelector = document.getElementById(
+  "ratingMenuCourseSelector",
+);
+
+function renderMenuCourses(facultyName) {
+  // Clear the existing options
+  ratingMenuCourseSelector.innerHTML = "";
+
+  // Find the faculty by name
+  const faculty = facultyList.find((f) => f.name === facultyName);
+
+  if (faculty) {
+    ratingMenuFacultySelector.value = faculty.name; // Set the selected faculty in the dropdown
+    // Add each course as an option
+    faculty.courses.forEach((course) => {
+      const option = document.createElement("option");
+      option.value = course;
+      option.innerText = course;
+      ratingMenuCourseSelector.appendChild(option);
+    });
+  }
+}
 
 const facultyList = [
   new Faculty(
@@ -43,21 +83,34 @@ const facultyList = [
     7.8,
   ),
   new Faculty("Dr. Yo Gurt", "Physics", ["PHY120", "MTH320"], 8.4, 9.8),
+  new Faculty("Dr. Mike", "Chemistry", ["CHE110", "CAP441"], 8.2, 8.8),
 ];
 
 facultyList.forEach((faculty) => {
   facultyCardContainer.appendChild(faculty.renderFacultyCard());
+  ratingMenuFacultySelector.appendChild(faculty.renderFacultySelector());
 });
 
 function closeFacultyRatingMenu() {
-  facultyRatingMenu.classList.add("hidden")
+  facultyRatingMenu.classList.add("hidden");
 }
 
-const rateFacultyButtons = document.querySelectorAll(".faculty-rating__btn--open");
-const closeFacultyRatingMenuButton = document.getElementById("closeFacultyRatingMenu");
+const rateFacultyButtons = document.querySelectorAll(
+  ".faculty-rating__btn--open",
+);
+const closeFacultyRatingMenuButton = document.getElementById(
+  "closeFacultyRatingMenu",
+);
 
 rateFacultyButtons.forEach((button) => {
   button.addEventListener("click", openFacultyRatingMenu);
 });
 
 closeFacultyRatingMenuButton.addEventListener("click", closeFacultyRatingMenu);
+
+// home button
+const homeButton = document.getElementById("topbarCenterButtonHome");
+
+homeButton.addEventListener("click", function () {
+  window.location.href = "index.html";
+});
