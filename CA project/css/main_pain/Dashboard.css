@@ -128,10 +128,12 @@ body {
 }
 
 .sidebar_option {
+    text-decoration: none;
     padding: 1.6vh 2.5vh;
     font-size: 1.8vh;
     font-weight: 500;
     color: rgb(179, 99, 8);
+    list-style-type: none;
     cursor: pointer;
     transition: all 0.2s ease;
 }
