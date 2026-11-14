@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: system-ui;
+    background-color: rgb(250, 247, 245);
+    color: rgb(45, 26, 21);
+}
+
+.main {
+    background-color: rgb(100, 48, 36);
+    color: rgb(255, 255, 255);
+    padding: 40px 20px;
+    text-align: center;
+    position:sticky;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.main_line1 {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.main_line2 {
+    font-size: 16px;
+    color: rgb(244, 235, 230);
+}
+
+.teach_section {
+    padding: 30px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.teach_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1200px;
+    width: 100%;
+    transition: 0.3s;
+}
+
+.teach_card {
+    flex: 1 1 320px;
+    display: flex;
+    flex-direction: column;
+    max-width: 360px;
+    background-color: rgb(244, 235, 230);
+    border: 1px solid rgb(231, 209, 196);
+    border-radius: 10px;
+    padding: 22px;
+    box-sizing: border-box;
+    gap: 10px;
+    transition: 0.2s;
+}
+
+.teach_card:hover {
+    border-color: rgb(116, 55, 42);
+    cursor: pointer;
+    transform: scale(1.08);
+    box-shadow:0px 14px 28px rgba(120, 43, 2, 0.4);
+    row-gap:13px;
+}
+
+.teach_card_line1 {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(90, 44, 33);
+}
+
+.teach_card_line2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(116, 55, 42);
+    margin-bottom: 4px;
+}
+
+.teach_card_line3,
+.teach_card_line4 {
+    background-color: rgb(231, 209, 196);
+    color: rgb(90, 44, 33);
+    padding: 6px 12px;
+    border-radius: 14px;
+    font-size: 13px;
+    font-weight: 600;
+    width: fit-content;
+}
+
+.teach_card_break {
+    width: 100%;
+    border: 0;
+    border-top: 1px solid rgb(231, 209, 196);
+    margin: 6px 0;
+}
+
+.teach_card_line5 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(45, 26, 21);
+}
+
+.teach_card_line5_left {
+    color: rgb(185, 130, 27);
+}
+
+.teach_card_line5_right {
+    color: rgb(90, 44, 33);
+}
+
+.teach_card_line6 {
+    margin-top: 8px;
+    display: flex;
+}
+
+.teach_card_line6 a {
+    background-color: rgb(110, 54, 40);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 18px;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.teach_card_line6 a:hover {
+    background-color: rgb(90, 44, 33);
+    transform:scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}

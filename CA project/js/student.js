@@ -112,5 +112,5 @@ closeFacultyRatingMenuButton.addEventListener("click", closeFacultyRatingMenu);
 const homeButton = document.getElementById("topbarCenterButtonHome");
 
 homeButton.addEventListener("click", function () {
-  window.location.href = "index.html";
+  window.location.href = "main_pain/Dashboard.html";
 });
