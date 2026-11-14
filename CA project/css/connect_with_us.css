@@ -23,6 +23,13 @@ body {
     white-space: nowrap;
 }
 
+.home:hover,
+.connect-with-us:hover,
+.about:hover {
+    border-bottom: 2px solid #FFFFFF;
+    animation: slidingbar 0.4s;
+}
+
 .header_content {
     display: flex;
     justify-content: space-between;
@@ -42,6 +49,9 @@ body {
 }
 
 .header-right-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     animation-name: homeAnimation;
     animation-duration: 3s;
     background-color: #6E3628;
@@ -50,6 +60,7 @@ body {
     padding: 1rem 2rem;
     border-radius: 6px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header-right-button:hover{
@@ -887,4 +898,9 @@ body {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+
+@keyframes slidingbar {
+    from { border-bottom-color: transparent; }
+    to { border-bottom-color: #FFFFFF; }
 }

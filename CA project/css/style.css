@@ -127,3 +127,15 @@ html, body{
     animation-name: slidingbar;
     animation-duration: 0.4s;
 }
+
+.home:hover,
+.connect-with-us:hover,
+.about:hover {
+    border-bottom: 2px solid #FFFFFF;
+    animation: slidingbar 0.4s;
+}
+
+@keyframes slidingbar {
+    from { border-bottom-color: transparent; }
+    to { border-bottom-color: #FFFFFF; }
+}
