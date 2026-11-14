@@ -54,12 +54,16 @@ body {
 }
 
 .header-right-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 1rem 2rem;
     border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 6px;
     background-color: #6E3628;
     color: #FFFFFF;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header-right-button:hover {

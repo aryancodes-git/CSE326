@@ -135,3 +135,188 @@
 .hidden{
     display: none !important;
 }
+
+body {
+    background-color: #FAF7F5;
+    color: #2D1A15;
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+.faculty-card__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.faculty-card {
+    flex: 1 1 260px;
+    gap: 10px;
+    max-width: 360px;
+    margin: 0;
+    border: 1px solid #E7D1C4;
+    border-radius: 10px;
+    background-color: #F4EBE6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.faculty-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 0 2px #7C3C2E;
+}
+
+.faculty-card__name {
+    margin-bottom: 4px;
+    color: #5A2C21;
+}
+
+.faculty-card__department,
+.faculty-card__courses {
+    color: #665C59;
+}
+
+.faculty-card__overall-rating,
+.faculty-card__overall-course-difficulty {
+    color: #5A2C21;
+}
+
+.faculty-rating__btn--open,
+.faculty-rating__btn--close,
+.faculty-rating-menu__submit-btn {
+    width: fit-content;
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-color: #6E3628;
+    color: #FFFFFF;
+    font-family: inherit;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.faculty-rating__btn--open:hover,
+.faculty-rating__btn--close:hover,
+.faculty-rating-menu__submit-btn:hover {
+    background-color: #5A2C21;
+    transform: translateY(-1px);
+}
+
+.faculty-rating__btn--close {
+    margin: 0;
+}
+
+.faculty-rating-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px;
+}
+
+.faculty-rating-menu__form {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding: 24px;
+    border: 1px solid #E7D1C4;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(45, 26, 21, 0.08);
+}
+
+.faculty-rating-menu__form label {
+    color: #5A2C21;
+}
+
+.faculty-rating-menu__faculty-selector,
+.faculty-rating-menu__course-selector,
+.faculty-rating-menu__comment-input {
+    box-sizing: border-box;
+    width: 100%;
+    border-color: #D6A28A;
+    border-radius: 6px;
+    color: #2D1A15;
+}
+
+.faculty-rating-menu__faculty-selector:focus,
+.faculty-rating-menu__course-selector:focus,
+.faculty-rating-menu__comment-input:focus {
+    outline: 2px solid #D6A28A;
+}
+
+.faculty-rating-menu__rating-input,
+.faculty-rating-menu__difficulty-rating-input {
+    accent-color: #7C3C2E;
+}
+
+.faculty-rating-menu__container {
+    padding: 0 24px 24px;
+}
+
+@media (max-width: 600px) {
+    .faculty-card__container {
+        gap: 12px;
+        padding: 16px;
+    }
+
+    .faculty-card {
+        max-width: none;
+    }
+
+    .faculty-rating-menu {
+        padding: 16px;
+    }
+
+    .faculty-rating-menu__form {
+        padding: 16px;
+    }
+
+    .faculty-rating-menu__container {
+        padding: 0 16px 16px;
+    }
+}
+
+.topbar .topbar-left__logo {
+    box-sizing: content-box;
+    padding: 7px 16px 5px 10px;
+}
+
+.topbar .topbar-left__title {
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    color: #F3EBE6;
+    font-size: 0.9rem;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.topbar .topbar-center {
+    gap: 32px;
+}
+
+.topbar .topbar-center__btn {
+    font-weight: 500;
+}
+
+.topbar .topbar-right__btn {
+    text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+    .topbar .topbar-left__logo {
+        padding: 4px 8px 4px 4px;
+    }
+
+    .topbar .topbar-left__title {
+        font-size: 0.8rem;
+    }
+
+    .topbar .topbar-center {
+        gap: 16px;
+    }
+}
