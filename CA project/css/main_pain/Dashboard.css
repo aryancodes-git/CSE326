@@ -8,7 +8,7 @@ body {
     padding-left: 30vh;
     font-family: system-ui;
     font-size: 1.6vh;
-    
+
     color: black;
 }
 
@@ -139,12 +139,12 @@ body {
 }
 
 .sidebar_option:hover {
-    background-color: rgb(146, 109, 40,0.2);
+    background-color: rgb(146, 109, 40, 0.2);
     color: rgb(146, 2, 2);
     border-left: 0.4vh solid rgb(134, 13, 0);
     padding-left: 2.1vh;
     border-left-width: 1vh;
-    transition: .4s,ease-in;
+    transition: .4s, ease-in;
 }
 
 .break {
@@ -267,7 +267,9 @@ h1 {
     gap: 1.6vh;
 }
 
-.progres_evaluation,.progres_hallticket,.progres_feedback {
+.progres_evaluation,
+.progres_hallticket,
+.progres_feedback {
     background-color: wheat;
     padding: 2vh 2.5vh;
     border: 0.1vh solid wheat;
@@ -317,4 +319,171 @@ h1 {
     border: 0.1vh solid wheat;
     border-radius: 1vh;
     overflow: hidden;
+}
+
+
+/* feedback css */
+
+
+
+
+.feedback_dashboard {
+    font-family: system-ui;
+    color: rgb(26, 26, 26);
+    padding: 20px 25px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.feedback_heading_left {
+    font-size: 24px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+
+.feedback_heading_right a {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.feedback_heading_right a:hover {
+    color: rgb(116, 70, 51);
+}
+
+.feedback_card_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 28px;
+    width: 100%;
+}
+
+.pending_feedback {
+    flex: 1.15;
+    display: flex;
+    flex-direction: column;
+}
+
+.complete_feedback {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.common_heading_in_feedback, .complete_feedback_heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: rgb(17, 17, 17);
+}
+
+.common_heading_in_feedback .material-symbols-outlined {
+    color: rgb(217, 130, 43);
+    font-size: 22px;
+}
+
+.complete_feedback_heading .material-symbols-outlined {
+    color: rgb(59, 122, 87);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.pending_card_container, .complete_feedback_card {
+    background-color: rgb(243, 226, 195);
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.pending_card_left {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    flex: 1;
+}
+
+.pending_card_container_line1, .complete_feedback_teach_name {
+    flex: 1;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(17, 17, 17);
+}
+
+.pending_card_container_line2 {
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+
+.pending_card_container_line3 {
+    font-size: 20px;
+    color: rgb(197, 155, 39);
+    letter-spacing: 2px;
+    margin-top: 2px;
+}
+
+.pending_card_right {
+    display: flex;
+    background-color: rgb(124, 72, 50);
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    align-self: flex-end;
+    flex-shrink: 0;
+    gap: 8px;
+    padding: 10px 16px;
+    border-radius: 8px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.clean_link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.pending_card_right:hover {
+    background-color: rgb(97, 55, 38);
+}
+
+.pending_card_right .material-symbols-outlined {
+    font-size: 18px;
+}
+
+.complete_feedback_complete_sign {
+    display: flex;
+    flex-shrink: 0;
+    background-color: rgba(201, 222, 197, 0.9);
+    color: rgb(46, 92, 54);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    gap: 4px;
+}
+
+.complete_feedback_complete_sign .material-symbols-outlined {
+    font-size: 16px;
+    font-weight: bold;
 }
