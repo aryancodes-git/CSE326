@@ -223,3 +223,33 @@ body {
         padding: 0.75rem 1rem;
     }
 }
+
+.catpic,
+.catpic2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.catpic img,
+.catpic2 img {
+    display: block;
+    width: 350px;
+    max-width: 100%;
+}
+
+
+/* .catpic2 img {
+    margin: 10px auto 0;
+} */
+
+.catpic_l1, .catpic_l2{
+    text-align: center;
+}
+.catpic_l1{
+    font-size: 40px;
+}
+.catpic_l2{
+    font-size: 25px;
+}
